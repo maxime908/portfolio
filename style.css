@@ -533,6 +533,10 @@ hr {
         width: 110px;
         height: 110px;
     }
+
+    .margin-section:first-child {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 590px) {

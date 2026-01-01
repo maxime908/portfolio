@@ -6,9 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email");
     const message = document.getElementById("message");
 
+    const hamburger = document.querySelector(".hamburger-menu");
+    const headerMenu = document.querySelector(".header-menu");
+
+    if (window.matchMedia("(max-width: 800px)").matches) {
+        headerMenu.style.display = "none";
+    }
+
     let interval = null;
     let tl2  = null;
-    let tl3 = null;
 
     const alphabet = 
     [
@@ -121,4 +127,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             sendEmail();
     });
+
+    hamburger.addEventListener("click", () => {
+        if (headerMenu.style.display === "none") {
+            headerMenu.style.display = "flex";
+        } else {
+            headerMenu.style.display = "none";
+        }
+    })
 });

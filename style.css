@@ -112,7 +112,7 @@ body {
     text-shadow: 5px 5px 10px #000000, 4px 4px 0 #999999, 3px 3px 0 #AAAAAA, 2px 2px 0#BBBBBB, 1px 1px 0 #CCCCCC;
     animation: citation 0.5s;
     white-space: nowrap;
-    padding: 25px;
+    padding: 3%;
 }
 
 .row-hexagone {

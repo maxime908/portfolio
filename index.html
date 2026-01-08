@@ -49,7 +49,7 @@
     </header>
 
     <section id="main-content">
-        <svg class="hexa rotate-180" viewBox="148.06 3.96 249.01312849162008 834.03" data-name="Calque 1" id="Calque_1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="249.01312849162008" height="834.03">
+        <svg class="hexa anime-hexa1 rotate-180" viewBox="148.06 3.96 249.01312849162008 834.03" data-name="Calque 1" id="Calque_1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="249.01312849162008" height="834.03">
         <defs>
             <style>
             .cls-1 {
@@ -128,25 +128,28 @@
                     </defs>
                 </svg>
 
-                <div id="citation" >
+                <div id="citation">
                     <p class="GearsOfPeace">“Le <span>code</span> n’est pas qu’une <br> logique, c’est une intention.”</p>
                 </div>
             </div>
 
-            <div class="row-hexagone" id="hexa-header">
-                <a href="#about" class="hexagone color-1 cursor-pointer">
-                    <p class="SpaceNova">A Propos</p>
+            <div class="row-button" id="hexa-header">
+                <a href="#about" class="button column color-1 cursor-pointer SpaceNova">
+                    <div class="button color-1"></div>
+                    <p>A propos</p>
                 </a>
-                <a href="#project" class="hexagone color-2 cursor-pointer">
-                    <p class="SpaceNova">Projets</p>
+                <a href="#project" class="button column color-2 cursor-pointer SpaceNova">
+                    <div class="button color-2"></div>
+                    <p>Projects</p>
                 </a>
-                <a href="#contact" class="hexagone color-4 cursor-pointer">
-                    <p class="SpaceNova">Contact</p>
+                <a href="#contact" class="button column color-4 cursor-pointer SpaceNova">
+                    <div class="button color-4"></div>
+                    <p>Contact</p>
                 </a>
             </div>
         </div>
 
-        <svg class="hexa" viewBox="148.06 3.96 249.01312849162008 834.03" data-name="Calque 1" id="Calque_1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="249.01312849162008" height="834.03">
+        <svg class="hexa anime-hexa2" viewBox="148.06 3.96 249.01312849162008 834.03" data-name="Calque 1" id="Calque_1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="249.01312849162008" height="834.03">
         <defs>
             <style>
             .cls-1 {
@@ -216,25 +219,34 @@
         <h1 class="GearsOfPeace view">A PROPOS</h1>
 
         <div id="about-content">
-            <div id="profil" class="view">
-                <p class="robotoMono"><strong>Maxime Drezet</strong>, développeur web passionné par la création d’expériences numériques. Curieux et méthodique, j’aime concevoir des projets ambitieux en combinant technique, réflexion et souci du détai</p>
-                <img src="profile.png" alt="img-profile">
+            <div id="about-info">
+                <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web passionné par la création d’expériences numériques. Curieux et méthodique, j’aime concevoir des projets ambitieux en combinant technique, réflexion et souci du détai</p>
+                <div class="row-button hexa-about">
+                    <div class="hexagone-effect position-relative view">
+                        <p class="hexagone color-1 SpaceNova">Travailleur</p>
+                        <div class="color-1"></div>
+                    </div>
+                    <div class="hexagone-effect position-relative view">
+                        <p class="hexagone color-2 SpaceNova">Perseverant</p>
+                        <div class="color-2"></div>
+                    </div>
+                    <div class="hexagone-effect position-relative view">
+                        <p class="hexagone color-3 SpaceNova">Genereux</p>
+                        <div class="color-3"></div>
+                    </div>
+                    <div class="hexagone-effect position-relative view">
+                        <p class="hexagone color-4 SpaceNova">Determine</p>
+                        <div class="color-4"></div>
+                    </div>
+                </div>
             </div>
-
-            <div class="center row-hexagone hexa-about view">
-                <div class="hexagone color-1">
-                    <p class="SpaceNova">Travailleur</p>
-                </div>
-                <div class="hexagone color-2 decaler">
-                    <p class="SpaceNova">Perseverant</p>
-                </div>
-                <div class="hexagone color-3 decaler">
-                    <p class="SpaceNova">Genereux</p>
-                </div>
-                <div class="hexagone color-4">
-                    <p class="SpaceNova">Determine</p>
-                </div>
-            </div>
+            <img class="view" src="profile.svg" alt="img-profile">
+        </div>
+        <div class="row-button button-about view">
+            <a href="#project" class="button column color-1 cursor-pointer SpaceNova">
+                <div class="button color-1"></div>
+                <p>Voir projets</p>
+            </a>
         </div>
     </section>
 
@@ -257,7 +269,19 @@
                         </div>
                     </div>
                 </div>
-                <p class="robotoMono"><strong>Catch Them All</strong> est un jeu de rapidité en JavaScript où le joueur doit taper un maximum de suricates avant la fin du chronomètre, tout en évitant ceux piégés avec une bombe.<br><br>Technos : HTML, CSS, JavaScript</p>
+                <p class="robotoMono"><strong>Catch Them All</strong> est un jeu de rapidité en JavaScript où le joueur doit taper un maximum de suricates avant la fin du chronomètre, tout en évitant ceux piégés avec une bombe.</p>
+                    
+                <div class="techno robotoMono">
+                    <div>
+                        HTML
+                    </div>
+                    <div>
+                        CSS
+                    </div>
+                    <div>
+                        JavaScript
+                    </div>
+                </div>
             </a>
             
             <a href="https://mysinergy.org/HideAndSeek" target="_blank" class="project-div view">
@@ -275,7 +299,19 @@
                         </div>
                     </div>
                 </div>
-                <p class="robotoMono">Jeu de logique en JavaScript où le joueur doit identifier l’intrus au sein d’une grille interactive avec un nombre de coups limité.<br><br>Technos : HTML, CSS, JavaScript</p>
+                <p class="robotoMono">Jeu de logique en JavaScript où le joueur doit identifier l’intrus au sein d’une grille interactive avec un nombre de coups limité.</p>
+            
+                <div class="techno robotoMono">
+                    <div>
+                        HTML
+                    </div>
+                    <div>
+                        CSS
+                    </div>
+                    <div>
+                        JavaScript
+                    </div>
+                </div>
             </a>
 
             <a href="https://mysinergy.org/JeuVoiture" target="_blank" class="project-div view">
@@ -293,55 +329,34 @@
                         </div>
                     </div>
                 </div>
-                <p class="robotoMono">Jeu de course en JavaScript jouable à deux sur le même ordinateur, où l’objectif est de franchir la ligne d’arrivée avant l’autre joueur.<br><br>Technos : HTML, CSS, JavaScript</p>
-            </a>
+                <p class="robotoMono">Jeu de course en JavaScript jouable à deux sur le même ordinateur, où l’objectif est de franchir la ligne d’arrivée avant l’autre joueur.</p>
 
-            <a href="https://mysinergy.org/Forma_plan_VF" target="_blank" class="project-div view">
-                <div class="project-image-wrapper">
-                    <img src="forma.png" alt="Site Forma">
-                    <div class="hexa-img">
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>HTML</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>CSS</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>JS</p>
-                        </div>
+                <div class="techno robotoMono">
+                    <div>
+                        HTML
+                    </div>
+                    <div>
+                        CSS
+                    </div>
+                    <div>
+                        JavaScript
                     </div>
                 </div>
-                <p class="robotoMono">Participation avec trois camarades de classe à la réalisation d’un site web pour le salon Forma permettant aux visiteurs de pouvoir s’orienter vers les stands choisis.<br><br>Technos : HTML, CSS, JavaScript</p>
             </a>
+        </div>
 
-            <a href="https://mysinergy.org/SiteTODO" target="_blank" class="project-div view">
-                <div class="project-image-wrapper">
-                    <img src="TODO.png" alt="Site TODO">
-                    <div class="hexa-img">
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>HTML</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>CSS</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>JS</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>PHP</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>SQL</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="robotoMono">Application web de gestion de tâches permettant d’ajouter, modifier et supprimer des tâches via une interface simple et fonctionnelle.<br><br>Technos : HTML, CSS, JavaScript, PHP, SQL</p>
+        <div class="row-button button-about view">
+            <a href="#project" class="button column color-1 cursor-pointer SpaceNova">
+                <div class="button color-1"></div>
+                <p>Voir plus</p>
             </a>
         </div>
     </section>
 
     <section id="contact" class="margin-section view">
         <h1 class="GearsOfPeace">CONTACT</h1>
+
+        <h2>Une idée, un projet ou une question ? N’hésite pas à me contacter, je réponds rapidement.</h2>
 
         <div id="contact-content">
             <div id="div-form">

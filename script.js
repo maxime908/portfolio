@@ -37,9 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(alphabet.length)
 
     window.addEventListener("scroll", () => {
-        console.log(window.scrollY)
-        console.log(mainContent.offsetHeight)
-        if (window.scrollY > mainContent.offsetHeight) {
+        if (window.scrollY > mainContent.offsetHeight - 76) {
             navabar.classList.add("appear");
         } else {
             navabar.classList.remove("appear");
@@ -91,12 +89,22 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#citation span").innerHTML = "code";
     })
 
-    const hexaPath = document.querySelectorAll(".hexa path");
+    const hexaPath1 = document.querySelectorAll(".anime-hexa1 path");
+    const hexaPath2 = document.querySelectorAll(".anime-hexa2 path");
 
     tl2 = gsap.timeline({ repeat: -1, yoyo: true });
 
-    hexaPath.forEach((char) => {
+    hexaPath1.forEach((char) => {
         tl2.to(char, {
+            opacity: parseFloat(getComputedStyle(char).opacity) + 0.15,
+            duration: 0.5
+        })
+    });
+
+    tl3 = gsap.timeline({ repeat: -1, yoyo: true });
+
+    hexaPath2.forEach((char) => {
+        tl3.to(char, {
             opacity: parseFloat(getComputedStyle(char).opacity) + 0.15,
             duration: 0.5
         })

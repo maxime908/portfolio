@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tl.fromTo("#citation p", { x: "-200%" }, { x: 0, duration: 0.5, ease: "none" })
 
-    const hexa2 = document.querySelectorAll("#hexa-header .hexagone");
+    const hexa2 = document.querySelectorAll("#hexa-header .button");
 
     for (let i = hexa2.length - 1; i >= 0; i--) {
         tl.fromTo(hexa2[i], {

@@ -438,10 +438,6 @@ footer {
     justify-content: center;
 }
 
-#index-body #project {
-    overflow: visible;
-}
-
 #project-detail {
     padding: calc(76px + 50px) 120px;
     display: flex;
@@ -506,17 +502,12 @@ footer {
     gap: 30px;
 }
 
-#project-content {
+#index-body #project-content {
     display: flex;
     object-fit: cover;
     gap: 50px;
-    overflow: scroll;
+    overflow-x: scroll;
     width: 100%;
-}
-
-#project-content::-webkit-scrollbar-thumb {
-    background-image: unset;
-    background-color: grey;
 }
 
 #project-content a {

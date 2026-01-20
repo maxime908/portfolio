@@ -226,7 +226,7 @@
     <section id="project" class="margin-section">
         <h1 class="GearsOfPeace view">PROJETS</h1>
 
-        <div id="project-content" class="view">
+        <div id="project-content" class="scrollBarTheme view">
             <?php for ($i = 0; $i < 3; $i++): ?>
                 <?php $tableau = json_decode($projects[$i]['language']); ?>
 

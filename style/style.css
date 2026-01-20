@@ -399,7 +399,7 @@ header div a:hover::after {
     color: white;
 }
 
-.perspective-button .column .button {
+.perspective-button .column .main-button {
     position: absolute;
     z-index: -1;
     transform: translateY(4px);
@@ -409,7 +409,7 @@ header div a:hover::after {
     transition: 0.3s ease-in-out;
 }
 
-.perspective-button .column:hover > .button {
+.perspective-button .column:hover > .main-button {
     transform: translateY(8px);
     transition: 0.3s ease-in-out;
 }
@@ -548,7 +548,7 @@ footer {
     width: 100%;
 }
 
-#contact-content .perspective-button, #contact-content .perspective-button .button {
+#contact-content .perspective-button, #contact-content .perspective-button .main-button {
     width: 100%;
     text-align: center;
 }
@@ -970,7 +970,7 @@ input[type="file"] {
     width: 100%;
 }
 
-#login form .perspective-button {
+#login form .row-button {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -1043,11 +1043,11 @@ input[type="file"] {
     z-index: 3;
 }
 
-#deletePanel .column .button {
+#deletePanel .column .main-button {
     z-index: 1;
 }
 
-#deletePanel .perspective-button {
+#deletePanel .row-button {
     display: flex;
     flex-direction: column;
     gap: 15px;

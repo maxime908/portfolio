@@ -113,8 +113,8 @@
                             <?php if (isset($_GET['addProject'])): ?>
                                 <td>
                                     <div class="perspective-button">
-                                        <button type="submit" class="button column color-save cursor-pointer save">
-                                            <div class="button color-save"></div>
+                                        <button type="submit" class="main-button column color-save cursor-pointer save">
+                                            <div class="main-button color-save"></div>
                                             <p class="SpaceNova">Sauvegarder</p>
                                         </button>
                                     </div>
@@ -190,8 +190,8 @@
 
                                         <td>
                                             <div class="perspective-button">
-                                                <button type="submit" class="button column color-save cursor-pointer save">
-                                                    <div class="button color-save"></div>
+                                                <button type="submit" class="main-button column color-save cursor-pointer save">
+                                                    <div class="main-button color-save"></div>
                                                     <p class="SpaceNova">Sauvegarder</p>
                                                 </button>
                                             </div>
@@ -229,16 +229,16 @@
                                     <?php if (!isset($_GET['addProject'])): ?>
                                         <td>
                                             <div class="perspective-button">
-                                                <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="button column color-danger cursor-pointer color-update update">
-                                                    <div class="button color-update"></div>
+                                                <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="main-button column color-danger cursor-pointer color-update update">
+                                                    <div class="main-button color-update"></div>
                                                     <p class="SpaceNova">Modifier</p>
                                                 </button>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="perspective-button">
-                                                <button type="button" class="button column color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
-                                                    <div class="button color-danger"></div>
+                                                <button type="button" class="main-button column color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
+                                                    <div class="main-button color-danger"></div>
                                                     <p class="SpaceNova">Supprimer</p>
                                                 </button>
                                             </div>
@@ -256,13 +256,13 @@
     <div id="deletePanel" class="hidden">
         <div class="perspective-button">
             <form action="gestion/submitDelete.php?id=" method="POST">
-                <button type="submit" name="deleteButton" id="deleteButton" class="button column color-danger cursor-pointer">
-                    <div class="button color-danger"></div>
+                <button type="submit" name="deleteButton" id="deleteButton" class="main-button column color-danger cursor-pointer">
+                    <div class="main-button color-danger"></div>
                     <p class="GearsOfPeace">CONFIERMER LA SUPPRESSION</p>
                 </button>
             </form>
-            <button class="button column color-1 cursor-pointer" id="cancel">
-                <div class="button color-1"></div>
+            <button class="main-button column color-1 cursor-pointer" id="cancel">
+                <div class="main-button color-1"></div>
                 <p class="GearsOfPeace font-10">ANNULER</p>
             </button>
         </div>

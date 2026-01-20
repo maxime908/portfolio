@@ -6,12 +6,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger-menu");
     const headerMenu = document.querySelector(".header-menu");
 
+    function animateHexagone (timeline, hexaPath) {
+        timeline = gsap.timeline({ repeat: -1, yoyo: true });
+
+        hexaPath.forEach((char) => {
+            timeline.to(char, {
+                opacity: parseFloat(getComputedStyle(char).opacity) + 0.10,
+                duration: 0.5
+            })
+        });
+    }
+
     if (window.matchMedia("(max-width: 800px)").matches) {
         headerMenu.style.display = "none";
     }
 
     let interval = null;
-    let tl2  = null;
+
+    let tl2 = null;
+    let tl3 = null;
 
     const alphabet = 
     [
@@ -66,23 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const hexaPath1 = document.querySelectorAll(".anime-hexa1 path");
     const hexaPath2 = document.querySelectorAll(".anime-hexa2 path");
 
-    tl2 = gsap.timeline({ repeat: -1, yoyo: true });
-
-    hexaPath1.forEach((char) => {
-        tl2.to(char, {
-            opacity: parseFloat(getComputedStyle(char).opacity) + 0.15,
-            duration: 0.5
-        })
-    });
-
-    tl3 = gsap.timeline({ repeat: -1, yoyo: true });
-
-    hexaPath2.forEach((char) => {
-        tl3.to(char, {
-            opacity: parseFloat(getComputedStyle(char).opacity) + 0.15,
-            duration: 0.5
-        })
-    });
+    animateHexagone(tl2, hexaPath1);
+    animateHexagone(tl3, hexaPath2);
 
     function sendEmail () {
         let templateParams = {

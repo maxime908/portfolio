@@ -105,17 +105,17 @@
                 </div>
             </div>
 
-            <div class="row-button" id="hexa-header">
-                <a href="#about" class="button column color-1 cursor-pointer SpaceNova button-intro">
-                    <div class="button color-1"></div>
+            <div class="perspective-button" id="hexa-header">
+                <a href="#about" class="main-button column color-1 cursor-pointer SpaceNova button-intro">
+                    <div class="main-button color-1"></div>
                     <p>A propos</p>
                 </a>
-                <a href="project.php" class="button column color-2 cursor-pointer SpaceNova button-intro">
-                    <div class="button color-2"></div>
+                <a href="project.php" class="main-button column color-2 cursor-pointer SpaceNova button-intro">
+                    <div class="main-button color-2"></div>
                     <p>Projects</p>
                 </a>
-                <a href="#contact" class="button column color-4 cursor-pointer SpaceNova button-intro">
-                    <div class="button color-4"></div>
+                <a href="#contact" class="main-button column color-4 cursor-pointer SpaceNova button-intro">
+                    <div class="main-button color-4"></div>
                     <p>Contact</p>
                 </a>
             </div>
@@ -193,7 +193,7 @@
         <div id="about-content">
             <div id="about-info">
                 <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
-                <div class="row-button hexa-about">
+                <div class="perspective-button hexa-about">
                     <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-1 SpaceNova">Travailleur</p>
                         <div class="color-1"></div>
@@ -214,9 +214,9 @@
             </div>
             <img class="view" src="svg/profile.svg" alt="img-profile">
         </div>
-        <div class="row-button button-about view">
-            <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf" class="button column color-1 cursor-pointer SpaceNova">
-                <div class="button color-1"></div>
+        <div class="perspective-button button-about view">
+            <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf" class="main-button column color-1 cursor-pointer SpaceNova">
+                <div class="main-button color-1"></div>
                 <p>Mon CV</p>
             </a>
         </div>
@@ -246,9 +246,9 @@
             <?php endfor; ?>
         </div>
 
-        <div class="row-button button-about view">
-            <a href="project.php" class="button column color-1 cursor-pointer SpaceNova">
-                <div class="button color-1"></div>
+        <div class="perspective-button button-about view">
+            <a href="project.php" class="main-button column color-1 cursor-pointer SpaceNova">
+                <div class="main-button color-1"></div>
                 <p>Voir plus</p>
             </a>
         </div>
@@ -264,9 +264,9 @@
                 <input class="robotoMono view" id="name" type="text" placeholder="NOM" required>
                 <input class="robotoMono view" id="email" type="email" placeholder="EMAIL" required>
                 <textarea class="robotoMono view" id="message" placeholder="MESSAGE" required></textarea>
-                <div class="row-button view">
-                    <div class="button column color-1 cursor-pointer robotoMono">
-                        <div class="button color-1"></div>
+                <div class="perspective-button view">
+                    <div class="main-button column color-1 cursor-pointer robotoMono">
+                        <div class="main-button color-1"></div>
                         <p class="SpaceNova">Envoyer</p>
                     </div>
                 </div>

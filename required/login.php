@@ -16,7 +16,7 @@
                 <label for="password" class="robotoMono"><strong>Mot de passe</strong></label>
                 <input type="password" id="password" name="password" placeholder="Entrez votre Mot de passe" class="robotoMono">
             </div>
-            <div class="row-button">
+            <div class="perspective-button">
                 <button type="submit" class="button column color-1 cursor-pointer SpaceNova">
                     <div class="button color-1"></div>
                     <p class="GearsOfPeace">SE CONNECTER</p>

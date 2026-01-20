@@ -270,10 +270,14 @@
     
     <?php require_once(__DIR__ . "/required/login.php"); ?>
 
-    <?php require_once(__DIR__ . "/required/footer.php"); ?>
+    <footer>
+        
+    </footer>
 
+    <script src="script/openMenu.js"></script>
     <script src="script/admin.js"></script>
     <script src="script/filter.js"></script>
     <script src="script/animation.js"></script>
+    <script src="script/footerLoad.js"></script>
 </body>
 </html>

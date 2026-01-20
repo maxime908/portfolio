@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Portfolio -  DREZET Maxime</title>
 </head>
-<body>
+<body id="index-body">
     <?php require_once (__DIR__ . "/required/header.php"); ?>
 
     <section id="main-section">
@@ -194,19 +194,19 @@
             <div id="about-info">
                 <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
                 <div class="perspective-button hexa-about">
-                    <div class="hexagone-effect position-relative view">
+                    <div class="view">
                         <p class="hexagone color-1 SpaceNova">Travailleur</p>
                         <div class="color-1"></div>
                     </div>
-                    <div class="hexagone-effect position-relative view">
+                    <div class="view">
                         <p class="hexagone color-2 SpaceNova">Perseverant</p>
                         <div class="color-2"></div>
                     </div>
-                    <div class="hexagone-effect position-relative view">
+                    <div class="view">
                         <p class="hexagone color-3 SpaceNova">Genereux</p>
                         <div class="color-3"></div>
                     </div>
-                    <div class="hexagone-effect position-relative view">
+                    <div class="view">
                         <p class="hexagone color-4 SpaceNova">Determine</p>
                         <div class="color-4"></div>
                     </div>
@@ -321,10 +321,14 @@
         </div>
     </section>
 
-    <?php require_once(__DIR__ . "/required/footer.php"); ?>
+    <footer>
 
+    </footer>
+
+    <script src="script/openMenu.js"></script>
     <script src="script/script.js"></script>
     <script src="script/navbar.js"></script>
+    <script src="script/footerLoad.js"></script>
 
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">

@@ -37,7 +37,7 @@
             <div class="project-detail-wrapper">
                 <img id="image-intro" src="update/<?php echo htmlspecialchars($projectById['img']); ?>" alt="image1">
             </div>
-            <div class="row-button">
+            <div class="perspective-button">
                 <a href="https://<?php echo htmlspecialchars($projectById['url']); ?>" target="blank_" class="button column color-1 cursor-pointer save">
                     <div class="button color-1"></div>
                     <p class="SpaceNova">Voir site</p>

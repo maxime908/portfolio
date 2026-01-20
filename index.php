@@ -264,10 +264,10 @@
                 <input class="robotoMono view" id="name" type="text" placeholder="NOM" required>
                 <input class="robotoMono view" id="email" type="email" placeholder="EMAIL" required>
                 <textarea class="robotoMono view" id="message" placeholder="MESSAGE" required></textarea>
-                <div class="row-button button-about view">
+                <div class="row-button view">
                     <div class="button column color-1 cursor-pointer robotoMono">
                         <div class="button color-1"></div>
-                        <p>Voir plus</p>
+                        <p class="SpaceNova">Envoyer</p>
                     </div>
                 </div>
             </form>

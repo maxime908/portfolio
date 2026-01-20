@@ -112,7 +112,7 @@
                             </td>
                             <?php if (isset($_GET['addProject'])): ?>
                                 <td>
-                                    <div class="row-button">
+                                    <div class="perspective-button">
                                         <button type="submit" class="button column color-save cursor-pointer save">
                                             <div class="button color-save"></div>
                                             <p class="SpaceNova">Sauvegarder</p>
@@ -189,7 +189,7 @@
                                         </td>
 
                                         <td>
-                                            <div class="row-button">
+                                            <div class="perspective-button">
                                                 <button type="submit" class="button column color-save cursor-pointer save">
                                                     <div class="button color-save"></div>
                                                     <p class="SpaceNova">Sauvegarder</p>
@@ -228,7 +228,7 @@
 
                                     <?php if (!isset($_GET['addProject'])): ?>
                                         <td>
-                                            <div class="row-button">
+                                            <div class="perspective-button">
                                                 <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="button column color-danger cursor-pointer color-update update">
                                                     <div class="button color-update"></div>
                                                     <p class="SpaceNova">Modifier</p>
@@ -236,7 +236,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="row-button">
+                                            <div class="perspective-button">
                                                 <button type="button" class="button column color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
                                                     <div class="button color-danger"></div>
                                                     <p class="SpaceNova">Supprimer</p>
@@ -254,7 +254,7 @@
     </main>
 
     <div id="deletePanel" class="hidden">
-        <div class="row-button">
+        <div class="perspective-button">
             <form action="gestion/submitDelete.php?id=" method="POST">
                 <button type="submit" name="deleteButton" id="deleteButton" class="button column color-danger cursor-pointer">
                     <div class="button color-danger"></div>

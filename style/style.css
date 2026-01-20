@@ -155,18 +155,18 @@ main {
     padding: 3%;
 }
 
-.row-button {
+.perspective-button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-#hexa-header .row-button {
+#hexa-header .perspective-button {
     justify-content: center;
 }
 
-#about-info .row-button {
+#about-info .perspective-button {
     justify-content: flex-start;
 }
 
@@ -392,14 +392,14 @@ header div a:hover::after {
     width: auto;
 }
 
-.row-button p {
+.perspective-button p {
     padding: 18px 50px;
     position: relative;
     z-index: 1;
     color: white;
 }
 
-.row-button .column .button {
+.perspective-button .column .button {
     position: absolute;
     z-index: -1;
     transform: translateY(4px);
@@ -409,12 +409,12 @@ header div a:hover::after {
     transition: 0.3s ease-in-out;
 }
 
-.row-button .column:hover > .button {
+.perspective-button .column:hover > .button {
     transform: translateY(8px);
     transition: 0.3s ease-in-out;
 }
 
-.row-button button {
+.perspective-button button {
     border: none;
 }
 
@@ -548,7 +548,7 @@ footer {
     width: 100%;
 }
 
-#contact-content .row-button, #contact-content .row-button .button {
+#contact-content .perspective-button, #contact-content .perspective-button .button {
     width: 100%;
     text-align: center;
 }
@@ -970,7 +970,7 @@ input[type="file"] {
     width: 100%;
 }
 
-#login form .row-button {
+#login form .perspective-button {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -1047,7 +1047,7 @@ input[type="file"] {
     z-index: 1;
 }
 
-#deletePanel .row-button {
+#deletePanel .perspective-button {
     display: flex;
     flex-direction: column;
     gap: 15px;

@@ -135,7 +135,7 @@
                                     <?php endfor; ?>
 
                                     <td>    
-                                        <div class="row-button">
+                                        <div class="perspective-button">
                                             <button type="submit" class="button column color-save cursor-pointer save">
                                                 <div class="button color-save"></div>
                                                 <p class="SpaceNova">Sauvegarder</p>
@@ -163,7 +163,7 @@
 
                                 <?php if (!updateDetailActif()): ?>
                                     <td>
-                                        <div class="row-button">
+                                        <div class="perspective-button">
                                             <a href="?updateProjectDetail=true&id=<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>" style="text-align: center;" class="button column color-update cursor-pointer save">
                                                 <div class="button color-update"></div>
                                                 <p class="SpaceNova">Modifier</p>

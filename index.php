@@ -1,6 +1,6 @@
 <?php 
     require_once (__DIR__ . "/config/config.php"); 
-    require_once (__DIR__ . "/config/variables.php"); 
+    require_once (__DIR__ . "/config/variables.php");
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Portfolio -  DREZET Maxime</title>
 </head>
+
 <body id="index-body">
     <?php require_once (__DIR__ . "/required/header.php"); ?>
 
@@ -194,19 +195,19 @@
             <div id="about-info">
                 <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
                 <div class="perspective-button hexa-about">
-                    <div class="view">
+                    <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-1 SpaceNova">Travailleur</p>
                         <div class="color-1"></div>
                     </div>
-                    <div class="view">
+                    <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-2 SpaceNova">Perseverant</p>
                         <div class="color-2"></div>
                     </div>
-                    <div class="view">
+                    <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-3 SpaceNova">Genereux</p>
                         <div class="color-3"></div>
                     </div>
-                    <div class="view">
+                    <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-4 SpaceNova">Determine</p>
                         <div class="color-4"></div>
                     </div>
@@ -325,6 +326,7 @@
 
     </footer>
 
+    <script src="script/disableAutoScroll.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/script.js"></script>
     <script src="script/navbar.js"></script>

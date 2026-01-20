@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Admin -  DREZET Maxime</title>
 </head>
-<body class="overflow-hidden">
+<body class="overflow-hidden scrollTop">
      <?php require_once(__DIR__ . "/required/header.php"); ?>    
 
     <a href="#admin-main">
@@ -274,6 +274,7 @@
         
     </footer>
 
+    <script src="script/disableAutoScroll.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/admin.js"></script>
     <script src="script/filter.js"></script>

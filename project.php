@@ -88,7 +88,6 @@
         
     </footer>
     
-    <script src="script/disableAutoScroll.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/filter.js"></script>
     <script src="script/animationProject.js"></script>

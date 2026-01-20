@@ -274,7 +274,6 @@
         
     </footer>
 
-    <script src="script/disableAutoScroll.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/admin.js"></script>
     <script src="script/filter.js"></script>

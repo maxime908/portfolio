@@ -439,7 +439,7 @@ footer {
 }
 
 #index-body #project {
-    overflow: auto;
+    overflow: visible;
 }
 
 #project-detail {
@@ -510,7 +510,7 @@ footer {
     display: flex;
     object-fit: cover;
     gap: 50px;
-    overflow: auto;
+    overflow: scroll;
     width: 100%;
 }
 
@@ -1304,6 +1304,10 @@ input[type="file"] {
     #project-detail {
         padding: calc(76px + 50px) 16px;
     }
+
+    #index-body #project-content {
+        width: 100%;  
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -1343,10 +1347,6 @@ input[type="file"] {
 
     #index-body #project {
         width: 100%;
-    }
-
-    #index-body #project-content {
-        width: 250px;  
     }
 
     #index-body #project-content p {

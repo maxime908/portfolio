@@ -91,7 +91,6 @@
 
     </footer>
 
-    <script src="script/disableAutoScroll.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/animationDetail.js"></script>
     <script src="script/footerLoad.js"></script>

@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Admin -  DREZET Maxime</title>
 </head>
-<body class="overflow-hidden">
+<body class="overflow-hidden scrollTop">
      <?php require_once(__DIR__ . "/required/header.php"); ?>    
 
     <a href="#admin-main">
@@ -112,9 +112,9 @@
                             </td>
                             <?php if (isset($_GET['addProject'])): ?>
                                 <td>
-                                    <div class="row-button">
-                                        <button type="submit" class="button column color-save cursor-pointer save">
-                                            <div class="button color-save"></div>
+                                    <div class="perspective-button">
+                                        <button type="submit" class="main-button column color-save cursor-pointer save">
+                                            <div class="main-button color-save"></div>
                                             <p class="SpaceNova">Sauvegarder</p>
                                         </button>
                                     </div>
@@ -189,9 +189,9 @@
                                         </td>
 
                                         <td>
-                                            <div class="row-button">
-                                                <button type="submit" class="button column color-save cursor-pointer save">
-                                                    <div class="button color-save"></div>
+                                            <div class="perspective-button">
+                                                <button type="submit" class="main-button column color-save cursor-pointer save">
+                                                    <div class="main-button color-save"></div>
                                                     <p class="SpaceNova">Sauvegarder</p>
                                                 </button>
                                             </div>
@@ -228,17 +228,17 @@
 
                                     <?php if (!isset($_GET['addProject'])): ?>
                                         <td>
-                                            <div class="row-button">
-                                                <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="button column color-danger cursor-pointer color-update update">
-                                                    <div class="button color-update"></div>
+                                            <div class="perspective-button">
+                                                <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="main-button column color-danger cursor-pointer color-update update">
+                                                    <div class="main-button color-update"></div>
                                                     <p class="SpaceNova">Modifier</p>
                                                 </button>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="row-button">
-                                                <button type="button" class="button column color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
-                                                    <div class="button color-danger"></div>
+                                            <div class="perspective-button">
+                                                <button type="button" class="main-button column color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
+                                                    <div class="main-button color-danger"></div>
                                                     <p class="SpaceNova">Supprimer</p>
                                                 </button>
                                             </div>
@@ -254,15 +254,15 @@
     </main>
 
     <div id="deletePanel" class="hidden">
-        <div class="row-button">
+        <div class="perspective-button">
             <form action="gestion/submitDelete.php?id=" method="POST">
-                <button type="submit" name="deleteButton" id="deleteButton" class="button column color-danger cursor-pointer">
-                    <div class="button color-danger"></div>
+                <button type="submit" name="deleteButton" id="deleteButton" class="main-button column color-danger cursor-pointer">
+                    <div class="main-button color-danger"></div>
                     <p class="GearsOfPeace">CONFIERMER LA SUPPRESSION</p>
                 </button>
             </form>
-            <button class="button column color-1 cursor-pointer" id="cancel">
-                <div class="button color-1"></div>
+            <button class="main-button column color-1 cursor-pointer" id="cancel">
+                <div class="main-button color-1"></div>
                 <p class="GearsOfPeace font-10">ANNULER</p>
             </button>
         </div>
@@ -270,10 +270,15 @@
     
     <?php require_once(__DIR__ . "/required/login.php"); ?>
 
-    <?php require_once(__DIR__ . "/required/footer.php"); ?>
+    <footer>
+        
+    </footer>
 
+    <script src="script/disableAutoScroll.js"></script>
+    <script src="script/openMenu.js"></script>
     <script src="script/admin.js"></script>
     <script src="script/filter.js"></script>
     <script src="script/animation.js"></script>
+    <script src="script/footerLoad.js"></script>
 </body>
 </html>

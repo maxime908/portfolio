@@ -57,7 +57,7 @@
                 }
             }
 
-            $updateDetailStatement = $mysqlClient -> prepare("UPDATE projectdetail SET capture1 = :capture1, capture2 = :capture2, situation = :situation, tache = :tache, action = :action, resultat = :resultat, file_version = file_version + 1 WHERE id = :id");
+            $updateDetailStatement = $mysqlClient -> prepare("UPDATE projectdetail SET capture1 = :capture1, capture2 = :capture2, situation = :situation, tache = :tache, action = :action, resultat = :resultat, file_version = file_version + 1 WHERE project_id = :id");
             $updateDetailStatement -> execute([
                 'capture1' => $_SESSION['capture1'],
                 'capture2' => $_SESSION['capture2'],

@@ -58,7 +58,7 @@
                 'id' => $_POST['id']
             ]);
 
-            $projectDetailStatement = $mysqlClient -> prepare('UPDATE projectdetail SET name = :name WHERE id = :id');
+            $projectDetailStatement = $mysqlClient -> prepare('UPDATE projectdetail SET name = :name WHERE project_id = :id');
             $projectDetailStatement -> execute([
                 'name' => $_POST['name'],
                 'id' => $_POST['id']

@@ -100,10 +100,6 @@
                     </defs>
                 </svg>
 
-                <p>
-                    qsdqsdqsdqsdsqdq
-                </p>
-
                 <div id="citation">
                     <p class="GearsOfPeace">“Le <span>code</span> n’est pas qu’une <br> logique, c’est une intention.”</p>
                 </div>

@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const mainContent = document.getElementById("main-content");
-    const navabar = document.querySelector("header");
-
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
@@ -33,36 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
     '`','~',
     ]
 
-
     console.log(alphabet.length)
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > mainContent.offsetHeight - 76) {
-            navabar.classList.add("appear");
-        } else {
-            navabar.classList.remove("appear");
-        }
-    });
-
-    const hexaProject = document.querySelectorAll(".project-image-wrapper");
-
-    hexaProject.forEach((element) => {
-        element.querySelector("img").addEventListener("mouseenter", () => {
-            element.querySelector(".hexa-img").classList.add("hexaAdd");
-        })
-    })
-
-    hexaProject.forEach((element) => {
-        element.addEventListener("mouseleave", () => {
-            element.querySelector(".hexa-img").classList.remove("hexaAdd");
-        })
-    })
 
     let tl = gsap.timeline();
 
     tl.fromTo("#citation p", { x: "-200%" }, { x: 0, duration: 0.5, ease: "none" })
 
-    const hexa2 = document.querySelectorAll("#hexa-header .button");
+    const hexa2 = document.querySelectorAll("#hexa-header .button-intro");
 
     for (let i = hexa2.length - 1; i >= 0; i--) {
         tl.fromTo(hexa2[i], {
@@ -132,8 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("form").addEventListener("submit", (e) => {
         e.preventDefault();
 
-
-            sendEmail();
+        sendEmail();
     });
 
     hamburger.addEventListener("click", () => {
@@ -143,4 +116,4 @@ document.addEventListener("DOMContentLoaded", () => {
             headerMenu.style.display = "none";
         }
     })
-});
+})

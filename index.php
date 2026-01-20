@@ -1,56 +1,26 @@
-<?php require_once (__DIR__ . "/config.php"); ?>
+<?php 
+    require_once (__DIR__ . "/config/config.php"); 
+    require_once (__DIR__ . "/config/variables.php"); 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="svg/logo.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Portfolio -  DREZET Maxime</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_177_349)">
-                <path d="M60.0004 4.23959L49.5805 1.36989L44.6081 0.000488281L41.4873 1.43628L38.2454 2.92781L34.8723 4.47971L31.3614 6.09501L27.704 7.7777L32.862 9.45078L43.7369 12.9783L43.737 12.9782L42.6777 32.3183L45.8856 30.2279L47.2726 11.0774L47.2709 11.0784L36.4847 7.69978L39.9594 6.02025L50.6578 9.26007L50.6579 9.26L48.9705 28.2176L51.9393 26.283L53.9027 7.51553L53.9009 7.51646L43.2952 4.40792L46.4988 2.85942L57.0137 5.84547L57.0137 5.84543L54.7972 24.4206L57.5526 22.6249L60.0022 4.23867L60.0004 4.23959Z" fill="#C6C6C6"/>
-                <path d="M37.0604 16.5648L32.1387 14.8609C23.6979 11.9386 16.6363 11.9332 10.2407 14.8442L0.00104141 19.5048L17.8051 26.91L19.4506 46.0004L28.4034 40.2358C34.0116 36.6247 36.7842 30.0819 36.9994 19.5719L37.0609 16.5646L37.0604 16.5648ZM28.4607 34.0252L23.3224 37.1559L22.5712 24.349L22.5707 24.3493L9.87767 19.3017L15.5062 16.6171C18.8723 15.0116 22.6827 15.0116 27.1428 16.6171L33.0235 18.734L33.0274 22.9529C33.0326 28.5615 31.5366 32.1512 28.4607 34.0252Z" fill="#C6C6C6"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_177_349">
-                <rect width="60" height="46" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>
-        </a>
+    <?php require_once (__DIR__ . "/required/header.php"); ?>
 
-        <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
-            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-                <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
-                <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
-            </path>
-            <rect width="10" height="10" stroke="none">
-                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
-            </rect>
-            <rect width="10" height="10" stroke="none">
-                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
-                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-            </rect>
-        </svg>
-
-        <div class="header-menu">
-            <a href="#about" class="SpaceNova">A propos</a>
-            <a href="#project" class="SpaceNova">Projet</a>
-            <a href="#contact" class="SpaceNova">Contact</a>
-        </div>
-    </header>
-
-    <section id="main-content">
+    <section id="main-section">
         <svg class="hexa anime-hexa1 rotate-180" viewBox="148.06 3.96 249.01312849162008 834.03" data-name="Calque 1" id="Calque_1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="249.01312849162008" height="834.03">
         <defs>
             <style>
@@ -116,7 +86,7 @@
         </g>
         </svg>
 
-        <div id="div">
+        <div id="main-content">
             <div id="logo-content">
                 <svg class="logo-main" viewBox="0 0 747 577" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3" clip-path="url(#clip0_169_263)">
@@ -136,15 +106,15 @@
             </div>
 
             <div class="row-button" id="hexa-header">
-                <a href="#about" class="button column color-1 cursor-pointer SpaceNova">
+                <a href="#about" class="button column color-1 cursor-pointer SpaceNova button-intro">
                     <div class="button color-1"></div>
                     <p>A propos</p>
                 </a>
-                <a href="#project" class="button column color-2 cursor-pointer SpaceNova">
+                <a href="#project" class="button column color-2 cursor-pointer SpaceNova button-intro">
                     <div class="button color-2"></div>
                     <p>Projects</p>
                 </a>
-                <a href="#contact" class="button column color-4 cursor-pointer SpaceNova">
+                <a href="#contact" class="button column color-4 cursor-pointer SpaceNova button-intro">
                     <div class="button color-4"></div>
                     <p>Contact</p>
                 </a>
@@ -222,7 +192,7 @@
 
         <div id="about-content">
             <div id="about-info">
-                <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web passionné par la création d’expériences numériques. Curieux et méthodique, j’aime concevoir des projets ambitieux en combinant technique, réflexion et souci du détai</p>
+                <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
                 <div class="row-button hexa-about">
                     <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-1 SpaceNova">Travailleur</p>
@@ -242,12 +212,12 @@
                     </div>
                 </div>
             </div>
-            <img class="view" src="profile.svg" alt="img-profile">
+            <img class="view" src="svg/profile.svg" alt="img-profile">
         </div>
         <div class="row-button button-about view">
-            <a href="#project" class="button column color-1 cursor-pointer SpaceNova">
+            <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf" class="button column color-1 cursor-pointer SpaceNova">
                 <div class="button color-1"></div>
-                <p>Voir projets</p>
+                <p>Mon CV</p>
             </a>
         </div>
     </section>
@@ -255,120 +225,52 @@
     <section id="project" class="margin-section">
         <h1 class="GearsOfPeace view">PROJETS</h1>
 
-        <div id="project-content">
-            <a href="https://mysinergy.org/JeuTaupe" target="_blank" class="project-div view">
-                <div class="project-image-wrapper">
-                    <img src="JeuTaupe.png" alt="Jeu Taupe">
-                    <div class="hexa-img">
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>HTML</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>CSS</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>JS</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="robotoMono"><strong>Catch Them All</strong> est un jeu de rapidité en JavaScript où le joueur doit taper un maximum de suricates avant la fin du chronomètre, tout en évitant ceux piégés avec une bombe.</p>
-                    
-                <div class="techno robotoMono">
-                    <div>
-                        HTML
-                    </div>
-                    <div>
-                        CSS
-                    </div>
-                    <div>
-                        JavaScript
-                    </div>
-                </div>
-            </a>
-            
-            <a href="https://mysinergy.org/HideAndSeek" target="_blank" class="project-div view">
-                <div class="project-image-wrapper">
-                    <img src="HideAndSeek.png" alt="Hide And Seek">
-                    <div class="hexa-img">
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>HTML</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>CSS</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>JS</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="robotoMono">Jeu de logique en JavaScript où le joueur doit identifier l’intrus au sein d’une grille interactive avec un nombre de coups limité.</p>
-            
-                <div class="techno robotoMono">
-                    <div>
-                        HTML
-                    </div>
-                    <div>
-                        CSS
-                    </div>
-                    <div>
-                        JavaScript
-                    </div>
-                </div>
-            </a>
+        <div id="project-content" class="view">
+            <?php for ($i = 0; $i < 3; $i++): ?>
+                <?php $tableau = json_decode($projects[$i]['language']); ?>
 
-            <a href="https://mysinergy.org/JeuVoiture" target="_blank" class="project-div view">
-                <div class="project-image-wrapper">
-                    <img src="JeuVoiture.png" alt="Jeu Voiture">
-                    <div class="hexa-img">
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>HTML</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>CSS</p>
-                        </div>
-                        <div class="hexagone color-1 SpaceNova">
-                            <p>JS</p>
-                        </div>
+                <a href="projectDetail.php?id_project_detail=<?php echo htmlspecialchars($projects[$i]['id']); ?>" target="_blank" class="project-div view">
+                    <div class="project-image-wrapper">
+                        <img src="update/<?php echo htmlspecialchars($projects[$i]['img']); ?>" alt="Jeu Taupe">
                     </div>
-                </div>
-                <p class="robotoMono">Jeu de course en JavaScript jouable à deux sur le même ordinateur, où l’objectif est de franchir la ligne d’arrivée avant l’autre joueur.</p>
-
-                <div class="techno robotoMono">
-                    <div>
-                        HTML
+                    <p class="robotoMono"><?php echo htmlspecialchars($projects[$i]['description']); ?></p>
+                        
+                    <div class="techno robotoMono">
+                        <?php for ($j = 0; $j < count($tableau); $j++): ?>
+                            <div>
+                                <?php echo htmlspecialchars($tableau[$j]); ?>
+                            </div>
+                        <?php endfor; ?>
                     </div>
-                    <div>
-                        CSS
-                    </div>
-                    <div>
-                        JavaScript
-                    </div>
-                </div>
-            </a>
+                </a>
+            <?php endfor; ?>
         </div>
 
         <div class="row-button button-about view">
-            <a href="#project" class="button column color-1 cursor-pointer SpaceNova">
+            <a href="project.php" class="button column color-1 cursor-pointer SpaceNova">
                 <div class="button color-1"></div>
                 <p>Voir plus</p>
             </a>
         </div>
     </section>
 
-    <section id="contact" class="margin-section view">
-        <h1 class="GearsOfPeace">CONTACT</h1>
+    <section id="contact" class="margin-section">
+        <h1 class="GearsOfPeace view">CONTACT</h1>
 
-        <h2>Une idée, un projet ou une question ? N’hésite pas à me contacter, je réponds rapidement.</h2>
+        <h2 class="view">Une idée, un projet ou une question ? N’hésite pas à me contacter, je réponds rapidement.</h2>
 
         <div id="contact-content">
-            <div id="div-form">
-                <form>
-                    <input class="robotoMono" id="name" type="text" placeholder="NOM" required>
-                    <input class="robotoMono" id="email" type="email" placeholder="EMAIL" required>
-                    <textarea class="robotoMono" id="message" placeholder="MESSAGE" required></textarea>
-                    <button class="robotoMono cursor-pointer" type="submit">ENVOYER LE MESSAGE</button>
-                </form>
-            </div>
+            <form>
+                <input class="robotoMono view" id="name" type="text" placeholder="NOM" required>
+                <input class="robotoMono view" id="email" type="email" placeholder="EMAIL" required>
+                <textarea class="robotoMono view" id="message" placeholder="MESSAGE" required></textarea>
+                <div class="row-button button-about view">
+                    <div class="button column color-1 cursor-pointer robotoMono">
+                        <div class="button color-1"></div>
+                        <p>Voir plus</p>
+                    </div>
+                </div>
+            </form>
 
             <div id="div-hr">
                 <hr>
@@ -376,7 +278,7 @@
 
             <div id="info-content">
                 <a href="mailto:drezetmaxime67@gmail.com">
-                    <div class="info">
+                    <div class="info view">
                         <div class="hexagone">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-envelope-open" viewBox="0 0 16 16">
                                 <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"/>
@@ -386,7 +288,7 @@
                     </div>
                 </a>
                 <a href="https://github.com/gameofmax769" target="_blank">
-                    <div class="info">
+                    <div class="info view">
                         <div class="hexagone">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-github" viewBox="0 0 16 16">
                                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
@@ -396,7 +298,7 @@
                     </div>
                 </a>
                 <a href="https://www.instagram.com/game_of_max_/" target="_blank">
-                    <div class="info">
+                    <div class="info view">
                         <div class="hexagone">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
@@ -406,7 +308,7 @@
                     </div>
                 </a>
                 <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf">
-                    <div class="info">
+                    <div class="info view">
                         <div class="hexagone">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
                                 <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755"/>
@@ -419,11 +321,10 @@
         </div>
     </section>
 
-    <footer class="margin-section">
+    <?php require_once(__DIR__ . "/required/footer.php"); ?>
 
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/navbar.js"></script>
 
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">

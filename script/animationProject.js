@@ -19,5 +19,6 @@ window.addEventListener('load', () => {
         }
     } else {
         document.querySelector(".overflow-hidden").classList.remove("overflow-hidden")
+        document.querySelector("#project-body #transition").style.transform = "translateX(-100%)";
     }
 })

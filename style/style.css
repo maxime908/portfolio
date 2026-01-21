@@ -22,6 +22,9 @@
     box-sizing: border-box;
     scroll-margin-top: 76px;
     scroll-behavior: smooth;
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 body::-webkit-scrollbar {
@@ -320,11 +323,12 @@ header svg:hover {
     opacity: 0.7;
 }
 
-header div a {
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  padding: 15px 0;
+header div .animation-header-a {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 0;
+    font-size: 18px;
 }
 
 .header-menu {
@@ -332,8 +336,8 @@ header div a {
     gap: 30px;
 }
 
-header div a::before,
-header div a::after {
+header div .animation-header-a::before,
+header div .animation-header-a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -342,22 +346,22 @@ header div a::after {
   transition: all 0.5s;
 }
 
-header div a::before {
+header div .animation-header-a::before {
   top: 0;
   left: 0;
 }
 
-header div a::after {
+header div .animation-header-a::after {
   bottom: 0;
   right: 0;
 }
 
-header div a:hover::before {
+header div .animation-header-a:hover::before {
   width: 100%;
   transition: width 0.25s ease-in-out;
 }
 
-header div a:hover::after {
+header div .animation-header-a:hover::after {
   width: 100%;
   transition: width 0.25s ease-in-out 0.25s;
 }
@@ -615,6 +619,9 @@ footer {
     width: 100%;
     background-color: #00003B;
     z-index: 999;
+}
+
+#index-body #transition {
     transform: translateX(-100%);
 }
 

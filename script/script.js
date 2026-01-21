@@ -100,15 +100,13 @@ document.addEventListener("DOMContentLoaded", () => {
         sendEmail();
     });
 
-    document.getElementById("project-redirection").addEventListener("click", () => {
-        document.getElementById("transition").style.transform = "translateX(0)";
-        document.getElementById("transition").style.transition = "1s";
-        setTimeout(() => {
-            document.getElementById("transition").style.transform = "translateX(-100%)";
+    document.querySelectorAll(".launch-transition").forEach((element) => {
+        element.addEventListener("click", () => {
+            document.getElementById("transition").style.transform = "translateX(0)";
             document.getElementById("transition").style.transition = "1s";
             setTimeout(() => {
                 window.location.href = "project.php";
-            }, 800)
-        }, 1000)
+            }, 1000)
+        });
     });
 });

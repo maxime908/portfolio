@@ -67,9 +67,9 @@
         </svg>
 
         <div class="header-menu">
-            <a href="index.php#about" class="SpaceNova">A propos</a>
-            <a href="project.php" class="SpaceNova">Projet</a>
-            <a href="index.php#contact" class="SpaceNova">Contact</a>
+            <a href="index.php#about" class="cursor-pointer animation-header-a SpaceNova">A propos</a>
+            <button class="cursor-pointer animation-header-a SpaceNova launch-transition">Projet</button>
+            <a href="index.php#contact" class="cursor-pointer animation-header-a SpaceNova">Contact</a>
         </div>
     <?php endif; ?>
 </header>

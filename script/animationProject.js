@@ -1,5 +1,7 @@
 window.addEventListener('load', () => {
     if (!selected) {
+        gsap.fromTo("#project-body #transition", {x: 0}, {x: -innerWidth, duration: 1});
+
         document.querySelector("header").style.transform = "translateY(-100%)";
 
         let animationProject = gsap.timeline({onComplete: overflowAuto})

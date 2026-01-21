@@ -110,9 +110,9 @@
                 <a href="#about" class="main-button color-1 cursor-pointer SpaceNova button-intro">
                     <p>A propos</p>
                 </a>
-                <a href="project.php" class="main-button color-2 cursor-pointer SpaceNova button-intro">
+                <button class="launch-transition main-button color-2 cursor-pointer SpaceNova button-intro">
                     <p>Projects</p>
-                </a>
+                </button>
                 <a href="#contact" class="main-button color-4 cursor-pointer SpaceNova button-intro">
                     <p>Contact</p>
                 </a>
@@ -245,7 +245,7 @@
             <?php endfor; ?>
         </div>
 
-        <div class="perspective-button button-about view">
+        <div class="perspective-button button-about view launch-transition">
             <a id="project-redirection" class="main-butto color-1 cursor-pointer SpaceNova">
                 <p>Voir plus</p>
             </a>

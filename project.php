@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Portfolio -  DREZET Maxime</title>
 </head>
-<body class="overflow-hidden scrollTop" id="project-body">
+<body class="overflow-hidden" id="project-body">
     <?php require_once (__DIR__ . "/required/header.php"); ?>
 
     <main id="project-detail">
@@ -32,7 +32,9 @@
             <hr>
         </div>
 
-         <section id="project">
+        <div id="transition"></div>
+
+        <section id="project">
             <?php foreach($projects as $project): 
                 $language = json_decode($project['language']);
                 

@@ -56,17 +56,6 @@
                         <a href="projectDetail.php?id_project_detail=<?php echo htmlspecialchars($project['id']); ?>" class="project-div view">
                             <div class="project-image-wrapper">
                                 <img src="update/<?php echo $project['img']; ?>?v=<?php echo $project['file_version']; ?>" alt="<?php echo $project['img']; ?>">
-                                <div class="hexa-img">
-                                    <div class="hexagone color-1 SpaceNova">
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="hexagone color-1 SpaceNova">
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="hexagone color-1 SpaceNova">
-                                        <p>JS</p>
-                                    </div>
-                                </div>
                             </div>
                             <p class="robotoMono"><?php echo $project['description']; ?></p>
                                 

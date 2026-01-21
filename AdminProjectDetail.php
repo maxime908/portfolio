@@ -86,7 +86,7 @@
                     <tr id="tr-anchor-<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>">
                         <form action="gestion/updateProjectDetail.php" method="post" enctype="multipart/form-data">
                             <td class="hidden">
-                                <input type="text" name="id" value="<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>">
+                                <input type="text" name="id" value="<?php echo htmlspecialchars($AdminProjectsDetail['project_id']); ?>">
                             </td>
                             <?php if (!updateDetailActif()): ?>
                                 <td>
@@ -136,8 +136,7 @@
 
                                     <td>    
                                         <div class="perspective-button">
-                                            <button type="submit" class="main-button column color-save cursor-pointer save">
-                                                <div class="main-button color-save"></div>
+                                            <button type="submit" class="main-button color-save cursor-pointer save">
                                                 <p class="SpaceNova">Sauvegarder</p>
                                             </button>
                                         </div>
@@ -164,8 +163,7 @@
                                 <?php if (!updateDetailActif()): ?>
                                     <td>
                                         <div class="perspective-button">
-                                            <a href="?updateProjectDetail=true&id=<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>" style="text-align: center;" class="main-button column color-update cursor-pointer save">
-                                                <div class="main-button color-update"></div>
+                                            <a href="?updateProjectDetail=true&id=<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>" style="text-align: center;" class="main-button color-update cursor-pointer save">
                                                 <p class="SpaceNova">Modifier</p>
                                             </a>
                                         </div>

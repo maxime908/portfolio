@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="svg/logo.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
-    <title>Admin -  DREZET Maxime</title>
+    <title>Portfolio -  DREZET Maxime</title>
 </head>
-<body class="scrollTop">
+<body>
     <?php require_once(__DIR__ . "/required/header.php"); ?>
 
     <main id="main-detail">
@@ -38,35 +38,38 @@
                 <img id="image-intro" src="update/<?php echo htmlspecialchars($projectById['img']); ?>" alt="image1">
             </div>
             <div class="perspective-button">
-                <a href="https://<?php echo htmlspecialchars($projectById['url']); ?>" target="blank_" class="main-button column color-1 cursor-pointer save">
-                    <div class="main-button color-1"></div>
+                <a href="https://<?php echo htmlspecialchars($projectById['url']); ?>" target="blank_" class="main-button color-1 cursor-pointer save">
                     <p class="SpaceNova">Voir site</p>
                 </a>
             </div>
-            <div class="grid-card">
-                <div class="left-card">
-                    <h1 class="GearsOfPeace">
-                        SITUATION
-                    </h1>
-                    <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['situation']); ?></p>
+            <div class="flex-card">
+                <div class="card-group">
+                    <div class="left-card">
+                        <h1 class="GearsOfPeace">
+                            SITUATION
+                        </h1>
+                        <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['situation']); ?></p>
+                    </div>
+                    <div class="right-card">
+                        <h1 class="GearsOfPeace">
+                            TACHE
+                        </h1>
+                        <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['tache']); ?></p>
+                    </div>
                 </div>
-                <div class="right-card">
-                    <h1 class="GearsOfPeace">
-                        TACHE
-                    </h1>
-                    <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['tache']); ?></p>
-                </div>
-                <div class="left-card">
-                    <h1 class="GearsOfPeace">
-                        ACTION
-                    </h1>
-                    <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['action']); ?></p>
-                </div>
-                <div class="right-card">
-                    <h1 class="GearsOfPeace">
-                        RESULTAT
-                    </h1>
-                    <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['resultat']); ?></p>
+                <div class="card-group">
+                    <div class="left-card">
+                        <h1 class="GearsOfPeace">
+                            ACTION
+                        </h1>
+                        <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['action']); ?></p>
+                    </div>
+                    <div class="right-card">
+                        <h1 class="GearsOfPeace">
+                            RESULTAT
+                        </h1>
+                        <p class="robotoMono"><?php echo htmlspecialchars($projectDetail['resultat']); ?></p>
+                    </div>
                 </div>
             </div>
             <div class="allCapture">

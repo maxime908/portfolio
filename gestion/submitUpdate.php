@@ -2,6 +2,7 @@
     session_start();
     require_once(__DIR__ . "/../config/config.php");
     require_once(__DIR__ . "/../config/variables.php");
+    require_once(__DIR__ . "/../config/functions.php");
 ?>
 
 <?php 
@@ -17,36 +18,14 @@
         && isset($_POST['language']) 
         && isset($_FILES['file'])
         && isset($_POST['file_default'])) {
-            if ($_FILES['file']['error'] === 0) {
-                if ($_FILES['file']['size'] > 4000000) {
-                    $_SESSION['ERROR'] = "taille invalide";
-                    header("location: ../admin.php");
-                    return;
-                }
 
-                $path = pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION);
+            $selectProjectDetailStatement = $mysqlClient -> prepare("SELECT * FROM project WHERE id = :id");
+            $selectProjectDetailStatement -> execute([
+                'id' => $_POST['id']
+            ]);
+            $selectProjectDetail = $selectProjectDetailStatement -> fetch();
 
-                $selectProjectDetailStatement = $mysqlClient -> prepare("SELECT * FROM project WHERE id = :id");
-                $selectProjectDetailStatement -> execute([
-                    'id' => $_POST['id']
-                ]);
-                $selectProjectDetail = $selectProjectDetailStatement -> fetch();
-
-                $pathToUnlink = $selectProjectDetail['img'];
-
-                $pathToDestroy = "../update/$pathToUnlink";
-
-                unlink($pathToDestroy);
-
-                $uploads_dir = '../update';
-                $name = uniqid() . "." . $path;
-                $_SESSION['file'] = $name;
-                $tmp_name = $_FILES["file"]["tmp_name"];
-
-                move_uploaded_file($tmp_name, "$uploads_dir/$name");
-            } else {
-                $_SESSION['file'] = $_POST['file_default'];
-            }
+            uploadImg($selectProjectDetail, 'file', 'file_default');
 
             $projectStatement = $mysqlClient -> prepare('UPDATE project SET name = :name, url = :url, description = :description, language = :language, img = :img, file_version = file_version + 1 WHERE id = :id');
             $projectStatement -> execute([

@@ -65,14 +65,6 @@ body {
     padding: 37px 50px;
 }
 
-.projectCapture img {
-    width: 662.5px;
-}
-
-#main-detail .project-detail-wrapper img {
-    width: 842px;
-}
-
 .overflow-hidden {
     overflow-y: hidden !important;
 }
@@ -393,19 +385,105 @@ header div a:hover::after {
     color: white;
 }
 
-.perspective-button .column .main-button {
-    position: absolute;
-    z-index: -1;
-    transform: translateY(4px);
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
+.perspective-button .color-1 {
+    box-shadow: 0 4px 0 0 rgba(20,119,133, 0.5);
     transition: 0.3s ease-in-out;
 }
 
-.perspective-button .column:hover > .main-button {
-    transform: translateY(8px);
+.perspective-button .color-2 {
+    box-shadow: 0 4px 0 0 rgba(112, 156, 167, 0.5);
     transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-3 {
+    box-shadow: 0 4px 0 0 rgba(184, 203, 208, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-4 {
+    box-shadow: 0 4px 0 0 rgba(121, 143, 163, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-1:hover {
+    box-shadow: 0 8px 0 0 rgba(20,119,133, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-2:hover {
+    box-shadow: 0 8px 0 0 rgba(112, 156, 167, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-3:hover {
+    box-shadow: 0 8px 0 0 rgba(184, 203, 208, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-4:hover {
+    box-shadow: 0 8px 0 0 rgba(121, 143, 163, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-update {
+    box-shadow: 0 4px 0 0 rgba(108, 99, 255, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-update:hover {
+    box-shadow: 0 8px 0 0 rgba(90, 82, 224, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-danger {
+    box-shadow: 0 4px 0 0 rgba(230, 57, 70, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-danger:hover {
+    box-shadow: 0 8px 0 0 rgba(201, 47, 59, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-save {
+    box-shadow: 0 4px 0 0 rgba(31, 158, 147, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.perspective-button .color-save:hover {
+    box-shadow: 0 8px 0 0 rgba(38, 175, 163, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+
+.color-danger {
+    background-color: #E63946;
+    transition: var(--transition);
+}
+
+.color-danger:hover {
+    background-color: #C92F3B;
+    transition: var(--transition);
+}
+
+.color-update {
+    background-color: #6C63FF;
+    transition: var(--transition);
+}
+
+.color-update:hover {
+    background-color: #5A52E0;
+    transition: var(--transition);
+}
+
+.color-save {
+    background-color: #1F9E93;
+    transition: var(--transition);
+}
+
+.color-save:hover {
+    background-color: #26AFA3;
+    transition: var(--transition);
 }
 
 .perspective-button button {
@@ -667,30 +745,6 @@ hr {
     gap: 40px;
 }
 
-.hexa-img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    transform: translateY(-100%);
-    transition: 0.25s ease-in-out;
-    padding: 5px 0 5px 5px;
-    gap: 20px;
-}
-
-.hexa-img .hexagone {
-    width: 50px;
-    height: 50px;
-}
-
-.hexa-img .hexagone p {
-    font-size: 10px;
-}
-
 .profile {
     width: 345.89px;
     height: auto;
@@ -792,16 +846,6 @@ h2 {
     left: 0;
     bottom: 0;
     height: 100vh;
-}
-
-.color-danger {
-    background-color: #E63946;
-    transition: var(--transition);
-}
-
-.color-danger:hover {
-    background-color: #C92F3B;
-    transition: var(--transition);
 }
 
 .responsive {
@@ -918,37 +962,6 @@ td textarea:focus, td input:focus {
 
 .scrollBarTheme::-webkit-scrollbar {
     width: 10px;
-}
-
-.color-update {
-    background-color: #6C63FF;
-    transition: var(--transition);
-}
-
-.color-update:hover {
-    background-color: #5A52E0;
-    transition: var(--transition);
-}
-
-.delete {
-    color: white;
-    background-color: #E63946;
-    transition: var(--transition);
-}
-
-.delete:hover {
-    background-color: #C92F3B;
-    transition: var(--transition);
-}
-
-.color-save {
-    background-color: #1F9E93;
-    transition: var(--transition);
-}
-
-.color-save:hover {
-    background-color: #26AFA3;
-    transition: var(--transition);
 }
 
 #blur {
@@ -1081,10 +1094,6 @@ input[type="file"] {
     z-index: 3;
 }
 
-#deletePanel .column .main-button {
-    z-index: 1;
-}
-
 #deletePanel .perspective-button {
     display: flex;
     flex-direction: column;
@@ -1106,7 +1115,6 @@ input[type="file"] {
     color: white;
     font-size: 18px;
     border: 1px solid #3A3F55;
-    overflow-x: hidden;
 }
 
 .addCategorie svg {
@@ -1125,13 +1133,14 @@ input[type="file"] {
 
 .hidden-icons {
     opacity: 0;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    transform: translateY(135%);
     transition: var(--transition);
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    z-index: 999;
 }
 
 .hidden-icons form button {
@@ -1153,11 +1162,10 @@ input[type="file"] {
 .categorie-item {
     position: relative;
     display: flex;
-    flex-direction: column;
 }
 
 .panel-button {
-    overflow: auto;
+    overflow-x: auto;
 }
 
 .panel-button .buttonCategorie {
@@ -1165,23 +1173,29 @@ input[type="file"] {
 }
 
 .categorie-item:hover .hidden-icons {
-    top: 120%;
     opacity: 1;
     transition: var(--transition);
 }
 
-.grid-card {
-    display: grid;
-    grid-template-columns: 428px 428px;
-    grid-template-rows: 256px 256px;
-    grid-gap: 50px;
+.flex-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
     transform: translateX(-100%);
 }
 
-.grid-card div {
+.card-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card-group div {
     background-color: #131C4A;
-    width: 100%;
-    height: 100%;
+    width: 428px;
+    height: 256px;
     border-radius: 9px;
     padding: 25px 15px;
     display: flex;
@@ -1191,33 +1205,41 @@ input[type="file"] {
     transition: 0.25s;
 }
 
-.grid-card .animationCard {
+.card-group div:hover {
     transform: translateY(-6px);
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
     transition: 0.25s;
 }
 
-.grid-card div p {
+.card-group div p {
     color: white;
     font-size: 16px;
 }
 
-.grid-card div h1 {
+.card-group div h1 {
     font-size: 24px;
 }
 
+.projectCapture {
+    transform: translateX(-110%);
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
 #update1 {
-    transform: translateX(-200%);
+    width: 40%;
+    min-width: 400px;
 }
 
 #update2 {
-    transform: translateX(200%);
+    width: 40%;
+    min-width: 400px;
 }
 
-#detailMain {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+#main-detail .project-detail-wrapper img {
+    width: 70%;
 }
 
 @keyframes view {
@@ -1320,11 +1342,33 @@ input[type="file"] {
     .hamburger-menu {
         display: block;
     }
+
+    #main-detail .project-detail-wrapper img {
+        width: 90%;
+    }
+
+    .projectCapture {
+        width: 100% !important;
+    }
+
+    #update1 {
+        width: 100% !important;
+        min-width: 270px;
+    }
+
+    #update2 {
+        width: 100% !important;
+        min-width: 270px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .margin-section {
         padding: 50px 16px;
+    }
+
+    #main-detail {
+        padding: 100px 16px;
     }
 
     #project-detail {
@@ -1364,6 +1408,7 @@ input[type="file"] {
 
     h1 {
         font-size: 36px;
+        word-wrap: break-word;
     }
 
     .info p {
@@ -1376,6 +1421,11 @@ input[type="file"] {
 
     #index-body #project-content p {
         font-size: 12px;
+    }
+
+    .card-group div {
+        width: auto;
+        height: auto;
     }
 }
 

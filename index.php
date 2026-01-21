@@ -107,16 +107,13 @@
             </div>
 
             <div class="perspective-button" id="hexa-header">
-                <a href="#about" class="main-button column color-1 cursor-pointer SpaceNova button-intro">
-                    <div class="main-button color-1"></div>
+                <a href="#about" class="main-button color-1 cursor-pointer SpaceNova button-intro">
                     <p>A propos</p>
                 </a>
-                <a href="project.php" class="main-button column color-2 cursor-pointer SpaceNova button-intro">
-                    <div class="main-button color-2"></div>
+                <a href="project.php" class="main-button color-2 cursor-pointer SpaceNova button-intro">
                     <p>Projects</p>
                 </a>
-                <a href="#contact" class="main-button column color-4 cursor-pointer SpaceNova button-intro">
-                    <div class="main-button color-4"></div>
+                <a href="#contact" class="main-button color-4 cursor-pointer SpaceNova button-intro">
                     <p>Contact</p>
                 </a>
             </div>
@@ -216,8 +213,7 @@
             <img class="view profile" src="svg/profile.svg" alt="img-profile">
         </div>
         <div class="perspective-button button-about view">
-            <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf" class="main-button column color-1 cursor-pointer SpaceNova">
-                <div class="main-button color-1"></div>
+            <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf" class="main-button color-1 cursor-pointer SpaceNova">
                 <p>Mon CV</p>
             </a>
         </div>
@@ -250,8 +246,7 @@
         </div>
 
         <div class="perspective-button button-about view">
-            <a id="project-redirection" class="main-button column color-1 cursor-pointer SpaceNova">
-                <div class="main-button color-1"></div>
+            <a id="project-redirection" class="main-butto color-1 cursor-pointer SpaceNova">
                 <p>Voir plus</p>
             </a>
         </div>

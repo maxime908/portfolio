@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("transition").style.transition = "1s";
             setTimeout(() => {
                 window.location.href = "project.php";
-            }, 600)
+            }, 800)
         }, 1000)
     });
 });

@@ -223,7 +223,7 @@
         </div>
     </section>
 
-    <section id="project" class="margin-section">
+    <section id="project">
         <div id="transition"></div>
 
         <h1 class="GearsOfPeace view">PROJETS</h1>

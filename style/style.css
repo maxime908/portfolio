@@ -427,8 +427,15 @@ footer {
 
 #project {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px 0;
+    gap: 50px;
+}
+
+#index-body #project {
+    padding: 50px 120px;
 }
 
 #project-detail {
@@ -1273,6 +1280,10 @@ input[type="file"] {
     #contact hr {
         width: 90%;
     }
+
+    #about-info .perspective-button {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1296,18 +1307,18 @@ input[type="file"] {
         word-break: break-all;
     }
 
-    .hamburger-menu {
-        display: block;
-    }
-
     .header-menu {
         padding: 15px;
         right: 0;
         top: 76px;
-        position: absolute;
         display: none;
+        position: absolute;
         flex-direction: column;
         background-color: #00003B;
+    }
+
+    .hamburger-menu {
+        display: block;
     }
 }
 
@@ -1320,6 +1331,11 @@ input[type="file"] {
         padding: calc(76px + 50px) 16px;
     }
 
+    #index-body #project {
+        width: 100%;
+        padding: 50px 16px;
+    }
+
     #index-body #project-content {
         width: 100%;  
     }
@@ -1328,6 +1344,10 @@ input[type="file"] {
 @media screen and (max-width: 680px) {
     section:nth-child(3) {
         margin-top: 0;
+    }
+    
+    #info-content a {
+        flex-direction: column;
     }
 }
 

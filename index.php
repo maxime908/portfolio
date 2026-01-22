@@ -192,21 +192,76 @@
             <div id="about-info">
                 <p class="robotoMono view presentation-text"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
                 <div class="perspective-button hexa-about">
-                    <div class="hexagone-effect position-relative view">
-                        <p class="hexagone color-1 SpaceNova">Travailleur</p>
-                        <div class="color-1"></div>
+                    <div class="card cursor-pointer">
+                        <div class="card-inner">
+                            <div class="card-front hexagone-effect position-relative view">
+                                <p class="hexagone color-1">
+                                    Travailleur
+                                </p>
+                                <div class="color-1"></div>
+                            </div>
+
+                            <div class="card-back hexagone-effect position-relative view">
+                                <p class="hexagone color-1">
+                                    Assidu
+                                </p>
+                                <div class="color-1"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hexagone-effect position-relative view">
-                        <p class="hexagone color-2 SpaceNova">Perseverant</p>
-                        <div class="color-2"></div>
+
+                    <div class="card cursor-pointer">
+                        <div class="card-inner">
+                            <div class="card-front hexagone-effect position-relative view">
+                                <p class="hexagone color-2">
+                                    Perseverant
+                                </p>
+                                <div class="color-2"></div>
+                            </div>
+
+                            <div class="card-back hexagone-effect position-relative view">
+                                <p class="hexagone color-2">
+                                    Tenace
+                                </p>
+                                <div class="color-2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hexagone-effect position-relative view">
-                        <p class="hexagone color-3 SpaceNova">Genereux</p>
-                        <div class="color-3"></div>
+
+                    <div class="card cursor-pointer">
+                        <div class="card-inner">
+                            <div class="card-front hexagone-effect position-relative view">
+                                <p class="hexagone color-3">
+                                    Généreux
+                                </p>
+                                <div class="color-3"></div>
+                            </div>
+
+                            <div class="card-back hexagone-effect position-relative view">
+                                <p class="hexagone color-3">
+                                    Bienveillant
+                                </p>
+                                <div class="color-3"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hexagone-effect position-relative view">
-                        <p class="hexagone color-4 SpaceNova">Determine</p>
-                        <div class="color-4"></div>
+
+                    <div class="card cursor-pointer">
+                        <div class="card-inner">
+                            <div class="card-front hexagone-effect position-relative view">
+                                <p class="hexagone color-4">
+                                    Déterminé
+                                </p>
+                                <div class="color-4"></div>
+                            </div>
+
+                            <div class="card-back hexagone-effect position-relative view">
+                                <p class="hexagone color-4">
+                                    Assuré
+                                </p>
+                                <div class="color-4"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,6 +328,8 @@
             <div id="div-hr">
                 <hr>
             </div>
+
+            <div class="card">
 
             <div id="info-content" class="robotoMono">
                 <a href="mailto:drezetmaxime67@gmail.com" class="perspective-button">

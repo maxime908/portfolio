@@ -656,7 +656,7 @@ footer {
 }
 
 .hexagone-effect p {
-    font-size: 75%;
+    font-size: 100%;
 }
 
 #info-content .hexagone {
@@ -672,6 +672,48 @@ footer {
 
 .info-color {
     background-color: #B8CBD0;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position:relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    width: 146.37px !important;
+    height: 152.6px !important;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position:absolute;
+    height:100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 1 !important;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+.card-front {
+    transition: opacity .6s;
+}
+
+.card:hover .card-front {
+    opacity: 0;
+}
+
+.card-back {
+    transform: rotateY(180deg) translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #info-content a:hover .hexagone-effect div {

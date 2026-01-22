@@ -18,7 +18,7 @@
     <title>Portfolio -  DREZET Maxime</title>
 </head>
 
-<body id="index-body">
+<body id="index-body" class="resetTransition">
     <?php require_once (__DIR__ . "/required/header.php"); ?>
 
     <section id="main-section">
@@ -328,6 +328,7 @@
 
     </footer>
 
+    <script src="script/transition.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/script.js"></script>
     <script src="script/navbar.js"></script>

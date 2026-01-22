@@ -157,6 +157,10 @@ main {
     gap: 15px;
 }
 
+#hexa-header .main-button  {
+    font-size: 16px;
+}
+
 #hexa-header .perspective-button {
     justify-content: center;
 }
@@ -621,7 +625,7 @@ footer {
     z-index: 999;
 }
 
-#index-body #transition {
+.resetTransition #transition {
     transform: translateX(-100%);
 }
 

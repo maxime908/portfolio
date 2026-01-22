@@ -79,6 +79,7 @@
         
     </footer>
     
+    <script src="script/transition.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/filter.js"></script>
     <script src="script/animationProject.js"></script>

@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Portfolio -  DREZET Maxime</title>
 </head>
-<body>
+<body class="resetTransition">
     <?php require_once(__DIR__ . "/required/header.php"); ?>
 
     <main id="main-detail">
@@ -33,6 +33,8 @@
                     header('location: project.php');
                 }
             ?>
+
+            <div id="transition"></div>
 
             <div class="project-detail-wrapper">
                 <img id="image-intro" src="update/<?php echo htmlspecialchars($projectById['img']); ?>" alt="image1">
@@ -94,6 +96,7 @@
 
     </footer>
 
+    <script src="script/transition.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/animationDetail.js"></script>
     <script src="script/footerLoad.js"></script>

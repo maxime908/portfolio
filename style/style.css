@@ -22,9 +22,6 @@
     box-sizing: border-box;
     scroll-margin-top: 76px;
     scroll-behavior: smooth;
-    background-color: transparent;
-    border: none;
-    color: white;
 }
 
 body::-webkit-scrollbar {
@@ -36,6 +33,12 @@ body::-webkit-scrollbar-thumb {
     background-size: contain;
     background-position: center;
     cursor: grab;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 a {
@@ -157,11 +160,12 @@ main {
     gap: 15px;
 }
 
-#hexa-header .main-button  {
+#button-header .main-button  {
     font-size: 16px;
 }
 
-#hexa-header .perspective-button {
+#button-header {
+    display: flex;
     justify-content: center;
 }
 
@@ -507,10 +511,6 @@ footer {
     padding: 80px 0;
 }
 
-.column {
-    position: relative;
-}
-
 #project {
     display: flex;
     flex-direction: column;
@@ -847,16 +847,8 @@ h2 {
     justify-content: center;
 }
 
-#login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
+#login input {
+    color: #000000;
 }
 
 .responsive {
@@ -905,7 +897,7 @@ td:nth-child(even), th:nth-child(even) {
 }
 
 table a, table button {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 td img {
@@ -919,7 +911,7 @@ td img {
 }
 
 #new .project-image-wrapper p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     color: #8FA2FF;
 }
@@ -1042,7 +1034,7 @@ input[type="file"] {
 #login form h1 {
     color: black;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 #login form label {
@@ -1077,12 +1069,16 @@ input[type="file"] {
 }
 
 #login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 2;
+    height: 100vh;
 }
 
 #login .danger-alert {
@@ -1114,17 +1110,14 @@ input[type="file"] {
     padding: 50px 40px;
 }
 
-.font-10 {
-    font-size: 10px;
-}
-
 .panel-btn {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: 1px solid #3A3F55;
 }
 
@@ -1138,7 +1131,7 @@ input[type="file"] {
     border: none;
     outline: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
 }
 
@@ -1177,6 +1170,7 @@ input[type="file"] {
 
 .panel-button {
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .panel-button .buttonCategorie {
@@ -1382,6 +1376,14 @@ input[type="file"] {
         padding: 100px 16px;
     }
 
+    main {
+        padding: 90px 16px 0 16px;
+    }
+
+    main header {
+        width: 10% !important;
+    }
+
     #project-detail {
         padding: calc(76px + 50px) 16px;
     }
@@ -1434,9 +1436,17 @@ input[type="file"] {
         font-size: 12px;
     }
 
+    .presentation-text {
+        font-size: 16px;
+    }
+
     .card-group div {
         width: auto;
         height: auto;
+    }
+
+    .main-button {
+        padding: 0;
     }
 }
 

@@ -106,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="perspective-button" id="hexa-header">
+            <div class="perspective-button" id="button-header">
                 <a href="#about" class="main-button color-1 cursor-pointer SpaceNova button-intro">
                     <p>A propos</p>
                 </a>
@@ -190,7 +190,7 @@
 
         <div id="about-content">
             <div id="about-info">
-                <p class="robotoMono view"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
+                <p class="robotoMono view presentation-text"><strong>Maxime Drezet</strong>, développeur web. <br> J’aime apprendre en construisant : chaque projet est pour moi un terrain d’expérimentation où je cherche à progresser techniquement et à créer des expériences web efficaces et soignées.</p>
                 <div class="perspective-button hexa-about">
                     <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-1 SpaceNova">Travailleur</p>
@@ -246,7 +246,7 @@
         </div>
 
         <div class="perspective-button button-about view launch-transition">
-            <a id="project-redirection" class="main-butto color-1 cursor-pointer SpaceNova">
+            <a id="project-redirection" class="main-button color-1 cursor-pointer SpaceNova">
                 <p>Voir plus</p>
             </a>
         </div>

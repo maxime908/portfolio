@@ -7,12 +7,6 @@ if (urlParams.size === 0) {
 
     let animationProject = gsap.timeline({onComplete: overflowAuto})
 
-    animationProject.fromTo("header", {y: -window.innerHeight}, {y: 0, duration: 0.5, ease: "power1.out"});
-
-    animationProject.fromTo("#admin-panel", {x: -window.innerWidth}, {x: 0, duration: 0.25, ease: "power1.out"});
-
-    animationProject.fromTo("#filter", {x: -window.innerWidth}, {x: 0, duration: 0.25, ease: "power1.out"});
-
     animationProject.fromTo(".alert", {x: -window.innerWidth}, {x: 0, duration: 0.25, ease: "power1.out"});
 
     if (document.querySelector(".responsive")) {

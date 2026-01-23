@@ -55,7 +55,7 @@
 
                 <?php if ($bool === false): ?>
                     <div id="project-content" class="view">
-                        <a href="projectDetail.php?id_project_detail=<?php echo htmlspecialchars($project['id']); ?>" class="project-div view">
+                        <a href="projectDetail.php?id_project_detail=<?php echo htmlspecialchars($project['id']); ?>" class="project-link view">
                             <div class="project-image-wrapper">
                                 <img src="update/<?php echo $project['img']; ?>?v=<?php echo $project['file_version']; ?>" alt="<?php echo $project['img']; ?>">
                             </div>

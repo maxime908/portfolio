@@ -38,7 +38,7 @@
         <?php if (updateDetailActif()): ?>
             <div id="admin-panel">
                 <div class="panel-intro">
-                    <p class="GearsOfPeace">ADMIN PANEL</p><hr>
+                    <p class="GearsOfPeace">PANNEAU ADMINISTATEUR</p><hr>
                 </div>
                 <div class="robotoMono panel-button">
                     <a href="AdminProjectDetail.php" class="cursor-pointer button-inactive panel-btn">Retour</a>

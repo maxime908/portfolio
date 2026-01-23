@@ -283,7 +283,7 @@
             <?php for ($i = 0; $i < 3; $i++): ?>
                 <?php $tableau = json_decode($projects[$i]['language']); ?>
 
-                <a href="projectDetail.php?id_project_detail=<?php echo htmlspecialchars($projects[$i]['id']); ?>" target="_blank" class="project-div view">
+                <a href="projectDetail.php?id_project_detail=<?php echo htmlspecialchars($projects[$i]['id']); ?>" target="_blank" class="project-link view">
                     <div class="project-image-wrapper">
                         <img src="update/<?php echo htmlspecialchars($projects[$i]['img']); ?>" alt="Jeu Taupe">
                     </div>

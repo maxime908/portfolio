@@ -1,7 +1,7 @@
 <div class="gap-30">
     <div id="admin-panel">
         <div class="panel-intro">
-            <p class="GearsOfPeace">ADMIN PANEL</p><hr>
+            <p class="GearsOfPeace">PANNEAU ADMINISTATEUR</p><hr>
         </div>
         <div class="robotoMono panel-button">
             <a href="?addProject=true" class="cursor-pointer button-inactive panel-btn">Créer</a>

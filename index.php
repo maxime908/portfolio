@@ -111,7 +111,7 @@
                     <p>A propos</p>
                 </a>
                 <button class="launch-transition main-button color-2 cursor-pointer SpaceNova button-intro">
-                    <p>Projects</p>
+                    <p>Projets</p>
                 </button>
                 <a href="#contact" class="main-button color-4 cursor-pointer SpaceNova button-intro">
                     <p>Contact</p>

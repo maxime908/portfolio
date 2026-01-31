@@ -7,14 +7,14 @@ if (urlParams.size === 0) {
 
     let animationProject = gsap.timeline({onComplete: overflowAuto})
 
-    animationProject.fromTo(".alert", {x: -window.innerWidth}, {x: 0, duration: 0.25, ease: "power1.out"});
+    animationProject.fromTo(".alert", {x: -innerWidth}, {x: 0, duration: 1, ease: "power1.out"});
 
     if (document.querySelector(".responsive")) {
-        animationProject.fromTo(".responsive", {y: window.innerHeight}, {y: 0, duration: 0.25, ease: "power1.out"});
+        animationProject.fromTo(".responsive", {y: innerHeight}, {y: 0, duration: 0.5, ease: "power1.out"});
     }
 
     if (document.getElementById("project-content")) {
-        animationProject.fromTo("#project-content", {y: window.innerHeight}, {y: 0, duration: 0.25, ease: "power1.out"});
+        animationProject.fromTo("#project-content", {y: innerHeight}, {y: 0, duration: 0.5, ease: "power1.out"});
     }
 
     function overflowAuto() {

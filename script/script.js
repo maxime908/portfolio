@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let tl = gsap.timeline();
 
-    tl.fromTo("#citation p", { x: "-200%" }, { x: 0, duration: 0.5, ease: "none" })
+    tl.fromTo("#citation p", { x: -innerWidth }, { x: 0, duration: 0.5, ease: "none" })
 
     for (let i = mainButton.length; i >= 0; i--) {
         tl.fromTo(mainButton[i], { x: -innerWidth}, { x: 0, duration: 0.5, ease: "none" })

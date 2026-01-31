@@ -343,7 +343,7 @@
                     </div>
                     <p>drezetmaxime67@gmail.com</p>
                 </a>
-                <a href="https://github.com/gameofmax769" target="_blank" class="perspective-button">
+                <a href="https://github.com/maxime908" target="_blank" class="perspective-button">
                     <div class="hexagone-effect position-relative view">
                         <p class="hexagone color-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-github" viewBox="0 0 16 16">

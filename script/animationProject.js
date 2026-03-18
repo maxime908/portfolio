@@ -1,3 +1,10 @@
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger) 
+
+ScrollSmoother.create({
+    smooth: 2,
+    effects: true
+});
+
 window.addEventListener('load', () => {
     if (!selected) {
         gsap.fromTo("#project-body #transition", {x: 0}, {x: -innerWidth, duration: 1});
@@ -21,4 +28,16 @@ window.addEventListener('load', () => {
         document.querySelector(".overflow-hidden").classList.remove("overflow-hidden")
         document.querySelector("#project-body #transition").style.transform = "translateX(-100%)";
     }
+
+    document.querySelectorAll(".view").forEach((element) => {
+        let io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    gsap.fromTo(element, { opacity: 0 }, { opacity: 1, duration: 3 })
+                }
+            })
+        })
+
+        io.observe(element)
+    })
 })

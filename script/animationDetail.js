@@ -1,3 +1,10 @@
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger) 
+
+ScrollSmoother.create({
+    smooth: 2,
+    effects: true
+});
+
 document.addEventListener("DOMContentLoaded", (event) => {
     const header = document.querySelector("header");
     const imageIntro = document.getElementById("image-intro");
@@ -10,20 +17,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     gsap.fromTo(".flex-card", {x: -innerWidth}, {x: 0, duration: 1, ease: "power1.out"});
 
-    let io = new IntersectionObserver(
-        entries => {
-        let ratio = Math.round(parseFloat(entries[0].intersectionRatio.toString().substr(0, 4)) + "e+2"); 
-        if (ratio >= 70) {
-            gsap.to(".projectCapture", {
-                x: 0,
-                duration: 1
-            })
-        }
-        },
-        {
-        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-        }
-    );
+    let io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                gsap.to(".projectCapture", {
+                    x: 0,
+                    duration: 1
+                })
+            }
+        })
+    })
 
     io.observe(document.querySelector('.allCapture'));
 });

@@ -22,4 +22,34 @@
     function updateDetailActif () {
         return isset($_GET['updateProjectDetail']);
     }
+
+    function uploadImg ($selectProjectDetail, $capture, $captureDefault) {
+        if ($_FILES[$capture]['error'] === 0) {
+            if ($_FILES[$capture]['size'] > 4000000) {
+                $_SESSION['ERROR'] = "taille invalide";
+                header("location: ../AdminProjectDetail.php");
+                return;
+            }
+
+            $path = pathinfo($_FILES[$capture]["name"], PATHINFO_EXTENSION);
+
+            $uploads_dir = '../update';
+
+            if ($selectProjectDetail[$capture]) {
+                $pathToUnlink = $selectProjectDetail[$capture];
+
+                $pathToDestroy = "../update/$pathToUnlink";
+
+                unlink($pathToDestroy);
+            }
+
+            $name = uniqid() . "." . $path;
+            $_SESSION[$capture] = $name;
+            $tmp_name = $_FILES[$capture]["tmp_name"];
+
+            move_uploaded_file($tmp_name, "$uploads_dir/$name");
+        } else {
+            $_SESSION[$capture] = $_POST[$captureDefault];
+        }
+    }
 ?>

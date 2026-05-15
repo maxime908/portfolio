@@ -113,8 +113,7 @@
                             <?php if (isset($_GET['addProject'])): ?>
                                 <td>
                                     <div class="perspective-button">
-                                        <button type="submit" class="main-button column color-save cursor-pointer save">
-                                            <div class="main-button color-save"></div>
+                                        <button type="submit" class="main-button color-save cursor-pointer save">
                                             <p class="SpaceNova">Sauvegarder</p>
                                         </button>
                                     </div>
@@ -190,8 +189,7 @@
 
                                         <td>
                                             <div class="perspective-button">
-                                                <button type="submit" class="main-button column color-save cursor-pointer save">
-                                                    <div class="main-button color-save"></div>
+                                                <button type="submit" class="main-button color-save cursor-pointer save">
                                                     <p class="SpaceNova">Sauvegarder</p>
                                                 </button>
                                             </div>
@@ -229,16 +227,14 @@
                                     <?php if (!isset($_GET['addProject'])): ?>
                                         <td>
                                             <div class="perspective-button">
-                                                <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="main-button column color-danger cursor-pointer color-update update">
-                                                    <div class="main-button color-update"></div>
+                                                <button type="button" value="<?php echo htmlspecialchars($project["id"]); ?>" class="main-button color-update cursor-pointer color-update update">
                                                     <p class="SpaceNova">Modifier</p>
                                                 </button>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="perspective-button">
-                                                <button type="button" class="main-button column color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
-                                                    <div class="main-button color-danger"></div>
+                                                <button type="button" class="main-button color-danger cursor-pointer delete" value="<?php echo htmlspecialchars($project["id"]); ?>">
                                                     <p class="SpaceNova">Supprimer</p>
                                                 </button>
                                             </div>
@@ -256,13 +252,11 @@
     <div id="deletePanel" class="hidden">
         <div class="perspective-button">
             <form action="gestion/submitDelete.php?id=" method="POST">
-                <button type="submit" name="deleteButton" id="deleteButton" class="main-button column color-danger cursor-pointer">
-                    <div class="main-button color-danger"></div>
+                <button type="submit" name="deleteButton" id="deleteButton" class="main-button color-danger cursor-pointer">
                     <p class="GearsOfPeace">CONFIERMER LA SUPPRESSION</p>
                 </button>
             </form>
-            <button class="main-button column color-1 cursor-pointer" id="cancel">
-                <div class="main-button color-1"></div>
+            <button class="main-button color-1 cursor-pointer" id="cancel">
                 <p class="GearsOfPeace font-10">ANNULER</p>
             </button>
         </div>

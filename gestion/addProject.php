@@ -37,7 +37,7 @@
 
             $id_nouveau = $mysqlClient->lastInsertId();
 
-            $projectDetailStatement = $mysqlClient -> prepare('INSERT INTO projectDetail (project_id, name, file_version) VALUES (:id, :name, :file_version)');
+            $projectDetailStatement = $mysqlClient -> prepare('INSERT INTO projectdetail (project_id, name, file_version) VALUES (:id, :name, :file_version)');
             $projectDetailStatement -> execute([
                 'id' => $id_nouveau,
                 'name' => $_POST['name'],

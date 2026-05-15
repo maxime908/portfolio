@@ -1,7 +1,16 @@
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger) 
+
+ScrollSmoother.create({
+    smooth: 2,
+    effects: true
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
+
+    const mainButton = document.querySelectorAll("#button-header .main-button");
 
     function animateHexagone (timeline, hexaPath) {
         timeline = gsap.timeline({ repeat: -1, yoyo: true });
@@ -36,11 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
     '`','~',
     ]
 
-    console.log(alphabet.length)
-
     let tl = gsap.timeline();
 
-    tl.fromTo("#citation p", { x: "-200%" }, { x: 0, duration: 0.5, ease: "none" })
+    tl.fromTo("#citation p", { x: -innerWidth }, { x: 0, duration: 0.5, ease: "none", delay: 0.5 })
+
+    for (let i = mainButton.length; i >= 0; i--) {
+        tl.fromTo(mainButton[i], { x: -innerWidth}, { x: 0, duration: 0.5, ease: "none" })
+    }
 
     const hexa2 = document.querySelectorAll("#hexa-header .button-intro");
 
@@ -99,4 +110,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         sendEmail();
     });
-})
+
+    let ancienneElement = null;
+
+    document.querySelectorAll(".view").forEach((element) => {
+        let io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    gsap.fromTo(element, { opacity: 0 }, { opacity: 1, duration: 1 })
+                }
+            })
+        })
+
+        io.observe(element)
+    })
+});

@@ -29,8 +29,8 @@
         </svg>
 
         <div class="header-menu">
-            <a href="admin.php" class="SpaceNova">Projet</a>
-            <a href="AdminProjectDetail.php" class="SpaceNova">Projet detail</a>
+            <a href="admin.php" class="animation-header-a SpaceNova">Projet</a>
+            <a href="AdminProjectDetail.php" class="animation-header-a SpaceNova">Projet detail</a>
         </div>
 
         <div id="logout-div">
@@ -67,9 +67,9 @@
         </svg>
 
         <div class="header-menu">
-            <a href="index.php#about" class="SpaceNova">A propos</a>
-            <a href="project.php" class="SpaceNova">Projet</a>
-            <a href="index.php#contact" class="SpaceNova">Contact</a>
+            <a href="index.php#about" class="cursor-pointer animation-header-a SpaceNova">A propos</a>
+            <button class="cursor-pointer animation-header-a SpaceNova launch-transition">Projet</button>
+            <a href="index.php#contact" class="cursor-pointer animation-header-a SpaceNova">Contact</a>
         </div>
     <?php endif; ?>
 </header>

@@ -23,7 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <title>Admin -  DREZET Maxime</title>
 </head>
-<body class="body-project-detail">
+<body class="body-project-detail scrollTop">
     <?php require_once(__DIR__ . "/required/header.php"); ?>
 
     <a href="#detailMain">
@@ -38,7 +38,7 @@
         <?php if (updateDetailActif()): ?>
             <div id="admin-panel">
                 <div class="panel-intro">
-                    <p class="GearsOfPeace">ADMIN PANEL</p><hr>
+                    <p class="GearsOfPeace">PANNEAU ADMINISTATEUR</p><hr>
                 </div>
                 <div class="robotoMono panel-button">
                     <a href="AdminProjectDetail.php" class="cursor-pointer button-inactive panel-btn">Retour</a>
@@ -86,7 +86,7 @@
                     <tr id="tr-anchor-<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>">
                         <form action="gestion/updateProjectDetail.php" method="post" enctype="multipart/form-data">
                             <td class="hidden">
-                                <input type="text" name="id" value="<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>">
+                                <input type="text" name="id" value="<?php echo htmlspecialchars($AdminProjectsDetail['project_id']); ?>">
                             </td>
                             <?php if (!updateDetailActif()): ?>
                                 <td>
@@ -136,8 +136,7 @@
 
                                     <td>    
                                         <div class="perspective-button">
-                                            <button type="submit" class="main-button column color-save cursor-pointer save">
-                                                <div class="main-button color-save"></div>
+                                            <button type="submit" class="main-button color-save cursor-pointer save">
                                                 <p class="SpaceNova">Sauvegarder</p>
                                             </button>
                                         </div>
@@ -164,8 +163,7 @@
                                 <?php if (!updateDetailActif()): ?>
                                     <td>
                                         <div class="perspective-button">
-                                            <a href="?updateProjectDetail=true&id=<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>" style="text-align: center;" class="main-button column color-update cursor-pointer save">
-                                                <div class="main-button color-update"></div>
+                                            <a href="?updateProjectDetail=true&id=<?php echo htmlspecialchars($AdminProjectsDetail['id']); ?>" style="text-align: center;" class="main-button color-update cursor-pointer save">
                                                 <p class="SpaceNova">Modifier</p>
                                             </a>
                                         </div>

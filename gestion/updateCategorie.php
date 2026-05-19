@@ -10,8 +10,9 @@
         return;
     }
 
-    if (isset($_POST['categorie'])) {
+    if (isset($_POST['categorie']) && isset($_POST['enum'])) {
         $categorie = $_POST['categorie'];
+        $enum = $_POST['enum'];
 
         if (empty($categorie)) {
             $_SESSION['ERROR'] = "Le champ ne peux pas être vide !";
@@ -19,9 +20,10 @@
             return;
         }
 
-        $categorieStatement = $mysqlClient -> prepare('UPDATE categories SET categorie = :categorie WHERE id = :id');
+        $categorieStatement = $mysqlClient -> prepare('UPDATE categories SET categorie = :categorie, stacks_cat = :enum WHERE id = :id');
         $categorieStatement -> execute([
             'categorie' => $categorie,
+            'enum' => $enum,
             'id' => $_POST['id']
         ]);
 

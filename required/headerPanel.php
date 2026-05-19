@@ -27,6 +27,11 @@
                         <form action="gestion/updateCategorie.php" class="updateCategorieForm" method="post">
                             <div class="panel-btn">
                                 <input type="text" name="categorie" value="<?php echo $categorie['categorie']; ?>">
+                                <select name="enum">
+                                    <?php foreach ($enumValues as $value): ?>
+                                        <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
+                                    <?php endforeach; ?>    
+                                </select>
                             </div>
                             <input type="text" name="id" class="hidden" value="<?php echo $categorie['id']; ?>">
                             <?php $booleanBtn = true; ?>
@@ -65,6 +70,11 @@
                 <form action="gestion/saveCategorie.php" class="saveCategorieForm" method="post">
                     <div class="panel-btn">
                         <input type="text" name="categorie" placeholder="Nom de la categorie">
+                        <select name="enum">
+                            <?php foreach ($enumValues as $value): ?>
+                                <option value="<?php echo $value; ?>"><?php echo $value; ?></option>
+                            <?php endforeach; ?>    
+                        </select>
                     </div>
                 </form>
             <?php endif; ?>

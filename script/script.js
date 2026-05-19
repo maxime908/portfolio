@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger) 
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger, ScrollToPlugin) 
 
 ScrollSmoother.create({
     smooth: 2,
@@ -125,3 +125,13 @@ document.addEventListener("DOMContentLoaded", () => {
         io.observe(element)
     })
 });
+
+document.querySelectorAll("#button-header a").forEach((element) => {
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const target = element.getAttribute("href");
+
+        gsap.to(window, { scrollTo: target });
+    })
+})

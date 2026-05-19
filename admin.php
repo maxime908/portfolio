@@ -19,7 +19,7 @@
     <title>Admin -  DREZET Maxime</title>
 </head>
 <body class="overflow-hidden">
-     <?php require_once(__DIR__ . "/required/header.php"); ?>    
+    <?php require_once(__DIR__ . "/required/header.php"); ?>    
 
     <a href="#admin-main">
         <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">

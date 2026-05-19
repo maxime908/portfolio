@@ -4,8 +4,9 @@
 ?>
 
 <?php
-    if (isset($_POST['categorie'])) {
+    if (isset($_POST['categorie']) && isset($_POST['enum'])) {
         $categorie = $_POST['categorie'];
+        $enum = $_POST['enum'];
 
         if (empty($categorie)) {
             $_SESSION['ERROR'] = "Le champ ne peux pas être vide !";
@@ -13,9 +14,10 @@
             return;
         }
 
-        $categorieStatement = $mysqlClient -> prepare("INSERT INTO categories (categorie) VALUES (:categorie)");
+        $categorieStatement = $mysqlClient -> prepare("INSERT INTO categories (categorie, stacks_cat) VALUES (:categorie, :enum)");
         $categorieStatement -> execute([
-            'categorie' => $categorie
+            'categorie' => $categorie,
+            'enum' => $enum,
         ]);
 
         header('location: ../admin.php');

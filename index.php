@@ -17,6 +17,17 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+        }
+        }
+    </script>
+    
     <title>Portfolio -  DREZET Maxime</title>
 </head>
 
@@ -93,17 +104,9 @@
 
                 <div id="main-content">
                     <div id="logo-content">
-                        <svg class="logo-main" viewBox="0 0 747 577" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.3" clip-path="url(#clip0_169_263)">
-                            <path d="M747.005 53.1792L617.278 17.1832L555.371 0.00610352L516.517 18.016L476.155 36.7249L434.16 56.1911L390.449 76.4526L344.915 97.5593L409.133 118.546L544.525 162.792L544.526 162.792L531.337 405.384L571.276 379.163L588.544 138.949L588.523 138.961L454.234 96.582L497.495 75.5149L630.69 116.153L630.691 116.153L609.682 353.947L646.644 329.68L671.089 94.2709L671.066 94.2825L539.025 55.2906L578.91 35.8671L709.82 73.3224L709.821 73.322L682.225 306.319L716.53 283.795L747.027 53.1676L747.005 53.1792Z" fill="#C6C6C6"/>
-                            <path d="M461.401 207.78L400.127 186.406C295.039 149.75 207.121 149.683 127.497 186.196L0.01297 244.657L221.674 337.543L242.16 577.004L353.622 504.696C423.445 459.4 457.964 377.33 460.642 245.498L461.409 207.777L461.401 207.78ZM354.336 426.794L290.364 466.063L281.011 305.42L281.005 305.423L122.977 242.109L193.052 208.435C234.96 188.297 282.4 188.297 337.928 208.435L411.143 234.989L411.191 287.908C411.255 358.26 392.631 403.287 354.336 426.794Z" fill="#C6C6C6"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_169_263">
-                            <rect class="logo-main" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
+                        <div class="logo-main" id="model">
+                            
+                        </div>
 
                         <div id="citation">
                             <p class="GearsOfPeace">“Le <span>code</span> n’est pas qu’une <br> logique, c’est une intention.”</p>
@@ -254,7 +257,7 @@
                     <img class="view profile" src="svg/profile.svg" alt="img-profile">
                 </div>
                 <div class="perspective-button button-about view">
-                    <a href="CV-Drezet-Maxime.pdf" download="CV Drezet Maxime.pdf" class="main-button color-1 cursor-pointer SpaceNova">
+                    <a href="Maxime_DREZET_CV.pdf" download="CV_Drezet_Maxime.pdf" class="main-button color-1 cursor-pointer SpaceNova">
                         <p>Mon CV</p>
                     </a>
                 </div>
@@ -349,7 +352,7 @@
                             <div class="hexagone-effect position-relative view">
                                 <p class="hexagone color-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                                     </svg>
                                 </p>
                                 <div class="info-color"></div>
@@ -378,6 +381,7 @@
         </div>
     </div>
 
+    <script type="module" src="script/three.js"></script>
     <script src="script/transition.js"></script>
     <script src="script/openMenu.js"></script>
     <script src="script/script.js"></script>

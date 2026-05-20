@@ -1355,6 +1355,17 @@ input[type="file"] {
     display: flex;
     justify-content: center;
     object-fit: cover;
+    gap: 30px;
+}
+
+.projectCapture a {
+    transition: 0.5s;
+    
+}
+
+.projectCapture a:hover {
+    scale: 1.05;
+    transition: 0.5s;
 }
 
 #update1 {
@@ -1521,6 +1532,14 @@ input[type="file"] {
 
     .stacks {
         flex-direction: column;
+    }
+
+    .stacks-description {
+        height: auto !important;
+    }
+
+    .stacks .stacks-container {
+        height: unset !important;
     }
 }
 

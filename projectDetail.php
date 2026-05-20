@@ -56,7 +56,7 @@
             height: 201px;
             border: 3px solid white;
             position: relative;
-            padding: 0 15px;
+            padding: 0 15px 15px 15px;
         }
 
         .techno {
@@ -99,6 +99,12 @@
 
         p {
             color: white !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            .stacks {
+                transform: translateX(calc(100% + 16px));
+            }
         }
     </style>
 </head>
@@ -263,10 +269,14 @@
                         </h1>
                         <div class="projectCapture">
                             <?php if ($projectDetail['capture1']): ?>
-                                <img id="update1" src="update/<?php echo htmlspecialchars($projectDetail['capture1']); ?>" alt="capture1">
+                                <a href="update/<?php echo htmlspecialchars($projectDetail['capture1']); ?>">
+                                    <img id="update1" src="update/<?php echo htmlspecialchars($projectDetail['capture1']); ?>" alt="capture1">
+                                </a>
                             <?php endif; ?>
                             <?php if ($projectDetail['capture2']): ?>
-                                <img id="update2" src="update/<?php echo htmlspecialchars($projectDetail['capture2']); ?>" alt="capture2">
+                                <a href="update/<?php echo htmlspecialchars($projectDetail['capture2']); ?>">
+                                    <img id="update2" src="update/<?php echo htmlspecialchars($projectDetail['capture2']); ?>" alt="capture2">
+                                </a>
                             <?php endif; ?>
                         </div>
                     </div>

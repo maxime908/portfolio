@@ -114,7 +114,7 @@
                     </div>
 
                     <div class="perspective-button" id="button-header">
-                        <a href="#about" class="main-button color-1 cursor-pointer SpaceNova button-intro">
+                        <a class="main-button color-1 cursor-pointer SpaceNova button-intro">
                             <p>A propos</p>
                         </a>
                         <button class="launch-transition main-button color-2 cursor-pointer SpaceNova button-intro">

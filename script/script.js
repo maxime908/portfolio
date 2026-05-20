@@ -114,10 +114,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let ancienneElement = null;
 
     document.querySelectorAll(".view").forEach((element) => {
+        element.style.opacity = "0";
+    })
+
+    document.querySelectorAll(".view").forEach((element) => {
         let io = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    gsap.fromTo(element, { opacity: 0 }, { opacity: 1, duration: 1 })
+                    gsap.to(element, { opacity: 1, duration: 1 })
+                } else {
+                    gsap.to(element, { opacity: 0, duration: 1 })
                 }
             })
         })
@@ -126,12 +132,18 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 });
 
-document.querySelectorAll("#button-header a").forEach((element) => {
+document.querySelectorAll("a").forEach((element) => {
     element.addEventListener("click", (e) => {
         e.preventDefault();
 
         const target = element.getAttribute("href");
 
-        gsap.to(window, { scrollTo: target });
+        const split = target.split("#");
+
+        if (split[1]) {
+            gsap.to(window, { scrollTo: { y: "#" + split[1], offsetY: 80 } });
+        } else if (split[0]) {
+            gsap.to(window, { scrollTo: { y: "#" + split[0], offsetY: 80 } });
+        }
     })
 })

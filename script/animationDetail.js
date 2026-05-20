@@ -63,3 +63,19 @@ document.querySelectorAll(".card-group div").forEach((element) => {
 
 io2.observe(document.querySelector('.stacks'));
 io.observe(document.querySelector('.allCapture'));
+
+document.querySelectorAll(".card-group div").forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+        element.style.boxShadow = "0 18px 45px rgba(0, 0, 0, 0.35)";
+        element.style.transform = "translateY(-6px)";
+        element.style.transition = "0.25s";
+    })
+})
+
+document.querySelectorAll(".card-group div").forEach((element) => {
+    element.addEventListener("mouseleave", () => {
+        element.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.25)";
+        element.style.transform = "translateY(0)";
+        element.style.transition = "0.25s";
+    })
+})

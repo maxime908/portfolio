@@ -34,6 +34,42 @@
 <body id="index-body" class="resetTransition">
     <?php require_once (__DIR__ . "/required/header.php"); ?>
 
+    <section id="launch-animation">
+        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 748.8811 578.402">
+            <defs>
+                <style>
+                .cls-1logo {
+                    fill: none;
+                }
+
+                .cls-2logo {
+                    opacity: .3;
+                }
+
+                .cls-3logo {
+                    fill: #00003B;
+                    stroke: white;
+                    stroke-miterlimit: 10
+                }
+
+                .cls-4logo {
+                    clip-path: url(#clippath);
+                }
+                </style>
+                <clipPath id="clippathLogo">
+                <rect class="cls-1logo" x="1.2315" y=".5248" width="747" height="577"/>
+                </clipPath>
+            </defs>
+            <g class="cls-4logo">
+                <g class="cls-2logo">
+                <path class="cls-3logo" d="M748.2365,53.704l-129.727-35.996L556.6025.531l-38.8539,18.0099-40.362,18.7089-41.995,19.4662-43.711,20.2615-45.534,21.1067,64.218,20.9867,135.392,44.246h.001l-13.189,242.592,39.939-26.221,17.268-240.214-.021.012-134.289-42.379,43.261-21.0671,133.195,40.6381h.001l-21.009,237.794,36.962-24.267,24.445-235.4091-.023.0116-132.041-38.9919,39.8849-19.4235,130.91,37.4553.001-.0004-27.596,232.997,34.3051-22.524,30.4969-230.6274-.022.0116Z"/>
+                <path class="cls-3logo" d="M462.6325,208.3048l-61.274-21.374c-105.088-36.656-193.006-36.723-272.63-.21L1.2445,245.1818l221.661,92.886,20.486,239.461,111.462-72.308c69.823-45.296,104.342-127.366,107.02-259.198l.767-37.721-.008.003ZM355.5675,427.3189l-63.972,39.269-9.353-160.643-.006.003-158.028-63.314,70.075-33.674c41.908-20.138,89.348-20.138,144.876,0l73.215,26.554.048,52.919c.064,70.352-18.56,115.379-56.855,138.886Z"/>
+                </g>
+            </g>
+        </svg>
+    </section>
+
+
     <div id="smooth-wrapper">
 		<div id="smooth-content">
             <section id="main-section">
@@ -65,10 +101,10 @@
                         clip-path: url(#clippath);
                     }
                     </style>
-                    <clipPath id="clippath">
+                    <clipPath>
                     <rect height="841.945" width="246.7778" x="147.2222" class="cls-1"/>
                     </clipPath>
-                    <clipPath id="clippath-1">
+                    <clipPath>
                     <rect height="841.89" width="595.276" y=".0275" class="cls-1"/>
                     </clipPath>
                 </defs>
@@ -113,8 +149,8 @@
                         </div>
                     </div>
 
-                    <div class="perspective-button" id="button-header">
-                        <a class="main-button color-1 cursor-pointer SpaceNova button-intro">
+                    <div class="perspective-button redirection" id="button-header">
+                        <a href="#about" class="main-button color-1 cursor-pointer SpaceNova button-intro">
                             <p>A propos</p>
                         </a>
                         <button class="launch-transition main-button color-2 cursor-pointer SpaceNova button-intro">
@@ -154,10 +190,10 @@
                         clip-path: url(#clippath);
                     }
                     </style>
-                    <clipPath id="clippath">
+                    <clipPath>
                     <rect height="841.945" width="246.7778" x="147.2222" class="cls-1"/>
                     </clipPath>
-                    <clipPath id="clippath-1">
+                    <clipPath>
                     <rect height="841.89" width="595.276" y=".0275" class="cls-1"/>
                     </clipPath>
                 </defs>
@@ -387,6 +423,22 @@
     <script src="script/script.js"></script>
     <script src="script/navbar.js"></script>
     <script src="script/footerLoad.js"></script>
+
+    <script>
+        const launchAnimation = document.getElementById("launch-animation");
+        
+        if (window.matchMedia("(min-width: 800px)").matches) {
+            setTimeout(() => {
+                launchAnimation.style.opacity = "0";
+                launchAnimation.style.transition = "1.5s";
+
+                setTimeout(() => {
+                    document.getElementById("index-body").style.overflowY = "auto";
+                    launchAnimation.style.zIndex = "-999";
+                }, 1500)
+            }, 6500)
+        }
+    </script>
 
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">

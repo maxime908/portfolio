@@ -30,10 +30,16 @@ window.addEventListener('load', () => {
     }
 
     document.querySelectorAll(".view").forEach((element) => {
+        element.style.opacity = "0";
+    })
+
+    document.querySelectorAll(".view").forEach((element) => {
         let io = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    gsap.fromTo(element, { opacity: 0 }, { opacity: 1, duration: 1 })
+                    gsap.to(element, { opacity: 1, duration: 1 })
+                } else {
+                    gsap.to(element, { opacity: 0, duration: 1 })
                 }
             })
         })

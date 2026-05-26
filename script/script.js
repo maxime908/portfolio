@@ -5,6 +5,8 @@ ScrollSmoother.create({
     effects: true
 });
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
@@ -132,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 });
 
-document.querySelectorAll("a").forEach((element) => {
+document.querySelectorAll(".redirection a").forEach((element) => {
     element.addEventListener("click", (e) => {
         e.preventDefault();
 
